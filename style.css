@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+header {
+    padding: 0 40px;
+    min-width: 1050px;
+}
+
+#header-wrap {
+    display: block;
+    position: relative;
+    height: 72px;
+    background: url('../assignment5/img/header-bg-left.png') left top no-repeat;
+    padding-left: 2px;
+}
+
+.header-bg-middle {
+    background: url('../assignment5/img/header-bg-middle.png') center top repeat-x;
+    min-height: 72px;
+}
+
+.header-bg-right {
+    background: url('../assignment5/img/header-bg-right.png') right top no-repeat;
+    padding-right: 2px;
+}
+
+#logo {
+    position: absolute;
+    left: 40px;
+    top: 15px;
+}
+
+#logo a {
+    display: block;
+    width: 195px;
+    height: 43px;
+    padding-top: 43px;
+    background: url('../assignment5/img/saas-logo.png') 0 0 no-repeat;
+    background-size: 195px auto;
+    overflow: hidden;
+}
+
+#nav-wrap {
+    position: absolute;
+    top: 15px;
+    right: 13px;
+    background: url('../assignment5/img/nav-left.png') left center no-repeat;
+    padding-left: 18px;
+}
+
+.nav-bg-right {
+    background: url('../assignment5/img/nav-right.png') right center no-repeat;
+    padding-right: 18px;
+}
+
+.nav-bg-middle {
+    background: url('../assignment5/img/nav-middle.png') center center repeat-x;
+}
+
+.nav-bg-middle ul li {
+    list-style: none;
+}
+
+.nav-bg-middle ul li:last-child {
+    padding-right: 123px;
+}
+
+.nav-a {
+    display: inline-block;
+    padding: 14px 36px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.nav-b {
+    visibility: hidden;
+}
+
+.route ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.route {
+    display: block;
+    margin-top: -1px;
+    height: 59px;
+    padding: 0 5px;
+    position: relative;
+    background-color: #71a549;
+}
+
+.route ul {
+    position: absolute;
+    top: 19px;
+    right: 17px;
+}
+
+.route ul li a {
+    text-decoration: none;
+}
+
+.aside-container {
+    padding-top: 80px;
+}
+
+
