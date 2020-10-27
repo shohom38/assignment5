@@ -4,169 +4,185 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assignment5/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
     <title>SaaS</title>
 </head>
 <body>
     <header>
-        <h1>LinkSaaS</h1>
-        <nav>
-            <ul>
-                <l1><a href="#">Home</a></l1>
-                <l1><a href="#">정보검색</a></l1>
-                <l1><a href="#">전자정보</a></l1>
-                <l1><a href="#">My Library</a></l1>
-            </ul>
-        </nav>
+        <div id="header-wrap">
+            <div class="header-bg-right">
+                <div class="header-bg-middle">
+                    <h1 id="logo">
+                        <a href="#">LinkSaaS</a>
+                    </h1>
+                    <nav id="nav-wrap">
+                        <div class="nav-bg-right">
+                            <div class="nav-bg-middle">
+                                <ul>
+                                    <l1 class="bg-deepred"><a href="#" class="nav-a">Home</a></l1>
+                                    <l1><a href="#" class="nav-a">정보검색</a></l1>
+                                    <l1><a href="#" class="nav-a">전자정보</a></l1>
+                                    <l1><a href="#" class="nav-a">My Library</a></l1>
+                                    <l1><a href="#" class="nav-a nav-b">My Library</a></l1>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
         <div class="route">
             <ul>
-                <li>Home</li>
-                <li>MyLibrary</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">MyLibrary</a></li>
                 <li>회원정보</li>
             </ul>
         </div>
     </header>
-    <aside>
-        <div class="sidebar-wrap">
-            <h2>My Library</h2>
-            <ul>
-                <li><a href="#">회원정보</a></li>
-                <li><a href="#">대출정보관리</a></li>
-                <li><a href="#">맞춤정보(SDI)신청</a></li>
-                <li><a href="#">원문관리서비스</a></li>
-            </ul>
+    <div class="aside-container">
+        <aside>
+            <div class="sidebar-wrap">
+                <h2>My Library</h2>
+                <ul>
+                    <li><a href="#">회원정보</a></li>
+                    <li><a href="#">대출정보관리</a></li>
+                    <li><a href="#">맞춤정보(SDI)신청</a></li>
+                    <li><a href="#">원문관리서비스</a></li>
+                </ul>
+            </div>
+        </aside>
+        <div class="contents-box">
+            <h3>맞춤정보(SDI) 신청</h3>
+            <div class="btn-section">
+                <button class="">키워드등록</button>
+                <button class="">저널검색</button>
+                <button class="">삭  제</button>
+            </div>
+            <div class="select-section">
+                총 <span>3건</span>
+                <select name="출력현황" id="output">
+                    <option value="10개 출력현황">10개 출력</option>
+                    <option value="9개 출력현황">9개 출력</option>
+                    <option value="8개출력현황">8개 출력</option>
+                </select>
+            </div>
+            <table>
+                <caption></caption>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>선택</th>
+                        <th>번호</th>
+                        <th>신청일</th>
+                        <th>신청방법</th>
+                        <th>신청정보</th>
+                        <th>제공건수</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>1</td>
+                        <td>2010.10.13</td>
+                        <td>키워드</td>
+                        <td>(서명:영화)</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>1</td>
+                        <td>2010.10.13</td>
+                        <td>키워드</td>
+                        <td>(서명:영화)</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>1</td>
+                        <td>2010.10.13</td>
+                        <td>키워드</td>
+                        <td>(서명:영화)</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="paging">
+                <a href="#" class="left-side">PREV</a>
+                <a href="#">1</a>
+                <strong>2</strong>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">9</a>
+                <a href="#">10</a>
+                <a href="#" class="right-side">NEXT</a>
+            </div>
+            <h4>제공정보</h4>
+            <table>
+                <caption></caption>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>선택</th>
+                        <th>번호</th>
+                        <th>제공일</th>
+                        <th>유형</th>
+                        <th>신청정보</th>
+                        <th>저자</th>
+                        <th>출판사</th>
+                        <th>출판년</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>1</td>
+                        <td>2010.10.13</td>
+                        <td>키워드</td>
+                        <td>(서명:영화)</td>
+                        <td></td>
+                        <td></td>
+                        <td>2007</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>1</td>
+                        <td>2010.10.13</td>
+                        <td>키워드</td>
+                        <td>(서명:영화)</td>
+                        <td></td>
+                        <td></td>
+                        <td>2007</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="btn-section-right-align">
+                <button>삭제</button>
+            </div>
         </div>
-    </aside>
-    <div class="contents-box">
-        <h3>맞춤정보(SDI)</h3>
-        <div class="btn-section">
-            <button class="">키워드등록</button>
-            <button class="">저널검색</button>
-            <button class="">삭  제</button>
-        </div>
-        <div class="select-section">
-            총 <span>3건</span>
-            <select name="" id="">
-                <option value=""></option>
-            </select>
-        </div>
-        <table>
-            <caption></caption>
-            <colgroup>
-                <col>
-                <col>
-                <col>
-                <col>
-                <col>
-                <col>
-            </colgroup>
-            <thead>
-                <tr>
-                    <th>선택</th>
-                    <th>번호</th>
-                    <th>신청일</th>
-                    <th>신청방법</th>
-                    <th>신청정보</th>
-                    <th>제공건수</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td>1</td>
-                    <td>2010.10.13</td>
-                    <td>키워드</td>
-                    <td>(서명:영화)</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td>1</td>
-                    <td>2010.10.13</td>
-                    <td>키워드</td>
-                    <td>(서명:영화)</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td>1</td>
-                    <td>2010.10.13</td>
-                    <td>키워드</td>
-                    <td>(서명:영화)</td>
-                    <td>2</td>
-                </tr>
-            </tbody>
-        </table>
-        <table>
-            <tr>
-                <td class="numbering left-side"><a href="#">PREV</a></td>
-                <td class="numbering"><a href="#">1</a></td>
-                <td class="numbering"><a href="#">2</a></td>
-                <td class="numbering"><a href="#">3</a></td>
-                <td class="numbering"><a href="#">4</a></td>
-                <td class="numbering"><a href="#">5</a></td>
-                <td class="numbering"><a href="#">6</a></td>
-                <td class="numbering"><a href="#">7</a></td>
-                <td class="numbering"><a href="#">8</a></td>
-                <td class="numbering"><a href="#">9</a></td>
-                <td class="numbering"><a href="#">10</a></td>
-                <td class="numbering right-side"><a href="#">NEXT</a></td>
-            </tr>
-        </table>
-        <h4>제공정보</h4>
-        <table>
-            <caption></caption>
-            <colgroup>
-                <col>
-                <col>
-                <col>
-                <col>
-                <col>
-                <col>
-                <col>
-                <col>
-            </colgroup>
-            <thead>
-                <tr>
-                    <th>선택</th>
-                    <th>번호</th>
-                    <th>제공일</th>
-                    <th>유형</th>
-                    <th>신청정보</th>
-                    <th>저자</th>
-                    <th>출판사</th>
-                    <th>출판년</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td>1</td>
-                    <td>2010.10.13</td>
-                    <td>키워드</td>
-                    <td>(서명:영화)</td>
-                    <td></td>
-                    <td></td>
-                    <td>2007</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td>1</td>
-                    <td>2010.10.13</td>
-                    <td>키워드</td>
-                    <td>(서명:영화)</td>
-                    <td></td>
-                    <td></td>
-                    <td>2007</td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="btn-section-right-align">
-            <button>삭제</button>
-        </div>
+        <footer>
+            <address>대전광역시 유성구 관평동 1359번지 한산에스메가 631호 LinkSaaS TEL:(042) 863-0850 FAX:(042) 330-0055</address>
+            <p>All Contents copylight(C) 2000. reserverd by LinkSaaS.CO.,LTD</p>
+        </footer>
     </div>
-    <footer>
-        <address>대전광역시 유성구 관평동 1359번지 한산에스메가 631호 LinkSaaS TEL:(042) 863-0850 FAX:(042) 330-0055</address>
-        <p>All Contents copylight(C) 2000. reserverd by LinkSaaS.CO.,LTD</p>
-    </footer>
 </body>
 </html>
