@@ -5,9 +5,12 @@
     font-family: 'Nanum Gothic', sans-serif;
 }
 
-header {
+body {
     padding: 0 40px;
-    min-width: 1050px;
+}
+
+header {
+    min-width: 950px;
 }
 
 #header-wrap {
@@ -61,8 +64,10 @@ header {
     background: url('../assignment5/img/nav-middle.png') center center repeat-x;
 }
 
-.nav-bg-middle ul li {
+.nav-bg-middle>ul>li {
+    display: inline-block;
     list-style: none;
+    background: url('../assignment5/img/arrow.png') right center no-repeat;
 }
 
 .nav-bg-middle ul li:last-child {
@@ -76,11 +81,20 @@ header {
     font-weight: bold;
     text-decoration: none;
     color: #ffffff;
+    background: url('../assignment5/img/divider.png') right center no-repeat;
 }
 
+.arrow {
+    display: inline-block;
+    background: url('../assignment5/img/arrow.png') right center no-repeat;
+}
 
 .nav-b {
     visibility: hidden;
+}
+
+.header-sub-block {
+    padding: 0 5px;
 }
 
 .route ul li {
@@ -94,7 +108,17 @@ header {
     height: 59px;
     padding: 0 5px;
     position: relative;
-    background-color: #71a549;
+    background: url('../assignment5/img/header-sub-title-middle.png') center center repeat-x;
+}
+
+.header-sub-block-left {
+    background: url('../assignment5/img/header-sub-title-left.png') left center no-repeat;
+    padding-left: 30px;
+}
+
+.header-sub-block-right {
+    background: url('../assignment5/img/header-sub-title-right.png') right center no-repeat;
+    padding-right: 30px;
 }
 
 .route ul {
@@ -108,7 +132,53 @@ header {
 }
 
 .aside-container {
-    padding-top: 80px;
+    padding: 25px 40px 0 40px;
+    position: relative;
+    margin-bottom: 19px;
+    border: 1px solid #cfcebe;
+    border-radius: 3px;
 }
 
+aside {
+    width: 166px;
+    margin: 0 auto;
+    position: absolute;
+}
 
+.left-category {
+    background: url('../assignment5/img/left-category.png') left center no-repeat;
+    padding-left: 36px;
+    height: 32px;
+}
+
+.right-category {
+    background: url('../assignment5/img/right-category.png') right center no-repeat;
+    padding-right: 36px;
+    height: 32px;
+}
+
+h2 {
+    font-size: 18px;
+    background: url('../assignment5/img/middle-category.png') center center repeat-x;
+    height: 32px;
+    line-height: 32px;
+    vertical-align: middle;
+    color: #ffffff;
+}
+
+.contents-box {
+    padding-left: 214px;
+}
+
+h3 {
+    padding-bottom: 17px;
+    margin-bottom: 20px;
+}
+
+.btn-section {
+    margin-bottom: 10px;
+}
+
+.sidebar-wrap>ul {
+    list-style: none;
+}
