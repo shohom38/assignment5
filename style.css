@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    min-width: 950px;
+    min-width: 1000px;
 }
 
 #header-wrap {
@@ -51,7 +51,7 @@ header {
     position: absolute;
     top: 15px;
     right: 13px;
-    background: url('../assignment5/img/nav-left.png') left center no-repeat;
+    background: url('../assignment5/img/nav-bar-color.png') left center no-repeat;
     padding-left: 18px;
 }
 
@@ -67,7 +67,6 @@ header {
 .nav-bg-middle>ul>li {
     display: inline-block;
     list-style: none;
-    background: url('../assignment5/img/arrow.png') right center no-repeat;
 }
 
 .nav-bg-middle ul li:last-child {
@@ -84,9 +83,13 @@ header {
     background: url('../assignment5/img/divider.png') right center no-repeat;
 }
 
-.arrow {
-    display: inline-block;
-    background: url('../assignment5/img/arrow.png') right center no-repeat;
+.nav-a img {
+    padding-left: 6px;
+}
+
+.bg-deepred {
+    background: url('../assignment5/img/nav-bar-color.png') center center no-repeat;
+    padding-right: 36px;
 }
 
 .nav-b {
@@ -155,6 +158,38 @@ aside {
     background: url('../assignment5/img/right-category.png') right center no-repeat;
     padding-right: 36px;
     height: 32px;
+
+}
+
+.middle-category {
+    background: url('../assignment5/img/category-middle.png') center center repeat-y;
+}
+
+.middle-category ul {
+    list-style: none;
+}
+
+.middle-category ul li {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.middle-category ul li:not(:last-child) {
+    background: url('../assignment5/img/underbar.png') center bottom no-repeat;
+}
+
+.middle-category ul li a {
+    display: block;
+    padding: 10px 0 10px 32px;
+    text-decoration: none;
+    font-size: 12px;
+    background: url('../assignment5/img/green-bullet.png') 0 0 no-repeat;
+    background-position: 15px 11px;
+}
+
+.bottom-category {
+    background: url('../assignment5/img/category-bottom.png') center bottom no-repeat;
+    padding-bottom: 10px;
 }
 
 h2 {
@@ -181,4 +216,34 @@ h3 {
 
 .sidebar-wrap>ul {
     list-style: none;
+}
+
+.btn {
+    min-width: 90px;
+    padding: 6px;
+}
+
+.btn:last-child {
+    word-spacing: 18px;
+}
+
+caption {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    text-align: center;
+}
+
+thead th{
+    border-bottom: 1px solid #999999;
+    border-right: 1px solid #999999;
+}
+
+.no-use-right-border {
+    border-right: none;
 }
