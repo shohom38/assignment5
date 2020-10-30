@@ -226,7 +226,7 @@ aside {
     padding-bottom: 10px;
 }
 
-h2 {
+#h2-category-logo {
     font-size: 18px;
     background: url('../assignment5/img/middle-category.png') center center repeat-x;
     height: 32px;
@@ -245,7 +245,7 @@ h2 {
     background: url('../assignment5/img/green-bar.png') 0 bottom repeat-x;
 }
 
-h3 {
+#h3-SDI {
     padding: 1px 35px;
     background: url('../assignment5/img/icon1.png') left center no-repeat;
 }
@@ -339,7 +339,7 @@ thead {
     background: linear-gradient(#ededeb, #cccfce);
 }
 
-tr:nth-child(2) {
+tr:nth-child(even) {
     background-color: #ebece6;
 }
 
@@ -429,7 +429,7 @@ td {
     padding: 5px 3px;
 }
 
-h4 {
+#Info {
     font-size: 14px;
     background: url('../assignment5/img/light-icon.png') left center no-repeat;
     padding: 6px 31px;
@@ -452,7 +452,7 @@ footer {
 }
 
 .footer-img a{
-    display: block;
+    display: inline-block;
     height: 43px;
     width: 195px;
     padding-top: 43px;
@@ -480,4 +480,139 @@ footer {
 address {
     font-style: normal;
     line-height: 1.5;
+}
+
+
+.popup-contents-box>p {
+    background: url('../assignment5/img/green-bullet.png') left center no-repeat;
+    padding-left: 21px;
+    margin-bottom: 14px;
+    font-size: 12px;
+}
+
+.header {
+    background: url('../assignment5/img/popup1-head-left.png') left center no-repeat;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.header-section-right {
+    background: url('../assignment5/img/popup1-head-right.png') right center no-repeat;
+    padding-right: 30px;
+}
+
+.header-section-middle {
+    background: url('../assignment5/img/popup1-head-middle.png') center center repeat-x;
+}
+
+#title-head {
+    padding: 14px 0 17px 60px;
+    font-size: 18px;
+    background: url('../assignment5/img/head-icon.png') left center no-repeat;
+    
+}
+
+#h3-select {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 24px;
+    background: url('../assignment5/img/thick.png') left center no-repeat;
+}
+
+#h3-search {
+    padding: 17px 0 17px 24px;
+    font-size: 14px;
+    font-weight: normal;
+    background: url('../assignment5/img/thick.png') left center no-repeat;
+}
+
+.alphabet {
+    background: url('../assignment5/img/thick-divide.png') left center no-repeat;
+    padding-left: 21px;
+}
+
+.select-pannel {
+    background: url('../assignment5/img/select-left.png') left center no-repeat;
+    padding-left: 21px;
+}
+
+.select-pannel-box {
+    background: url('../assignment5/img/under-bar.png') center top repeat-x;
+}
+
+.select-right {
+    background: url('../assignment5/img/select-right.png') right center no-repeat;
+    padding-right: 16px;
+}
+
+.select-middle {
+    background: url('../assignment5/img/select-middle.png') center center repeat-x;
+}
+
+.search-pannel {
+    background: url('../assignment5/img/search-left.png') left center no-repeat;
+    padding-left: 21px;
+}
+
+.search-pannel-box {
+    background: url('../assignment5/img/under-bar.png') center bottom repeat-x;
+}
+
+.search-right {
+    background: url('../assignment5/img/search-right.png') right center no-repeat;
+    padding-right: 16px;
+}
+
+.search-middle {
+    background: url('../assignment5/img/search-middle.png') center center repeat-x;
+}
+
+#name {
+    min-width: 101px;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+#searching {
+    min-width: 360px;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+.english a {
+    text-decoration: none;
+    color: #4a4949;
+}
+
+.korean a {
+    text-decoration: none;
+    color: #4a4949;
+}
+
+.other a {
+    text-decoration: none;
+    color: #4a4949;
+}
+
+.btn-last {
+    background: url('../assignment5/img/last-btn-left.png') left center no-repeat;
+    padding-left: 7px;
+    display: inline-block;
+}
+
+.btn-last-right {
+    background: url('../assignment5/img/last-btn-right.png') right center no-repeat;
+    padding-right: 7px;
+}
+
+.btn-last-middle {
+    background: url('../assignment5/img/last-btn-middle.png') center center repeat-x;
+}
+
+.btn-last-middle>a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 23px;
+    color: #ffffff;
+    word-spacing: 1px;
 }
