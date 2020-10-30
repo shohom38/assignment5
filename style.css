@@ -5,7 +5,7 @@
     font-family: 'Nanum Gothic', sans-serif;
 }
 
-body {
+.wrap {
     padding: 0 40px;
 }
 
@@ -89,7 +89,7 @@ header {
 
 .bg-deepred {
     background: url('../assignment5/img/nav-bar-color.png') center center no-repeat;
-    padding-right: 36px;
+    padding-right: 47px;
 }
 
 .nav-b {
@@ -105,6 +105,14 @@ header {
     list-style: none;
 }
 
+.route-flow-middle li {
+    padding: 6px 8px;
+    font-size: 12px;
+    vertical-align: middle;
+    color: #ffffff;
+}
+
+
 .route {
     display: block;
     margin-top: -1px;
@@ -112,6 +120,26 @@ header {
     padding: 0 5px;
     position: relative;
     background: url('../assignment5/img/header-sub-title-middle.png') center center repeat-x;
+}
+
+.route-flow-left {
+    background: url('../assignment5/img/route-left.png') left center no-repeat;
+    padding-left: 7px;
+}
+
+.route-flow-right {
+    background: url('../assignment5/img/route-right.png') right center no-repeat;
+    padding-right: 7px;
+}
+
+.route-flow-middle {
+    background: url('../assignment5/img/route-middle.png') center center repeat-x;
+
+}
+
+.route-flow-middle li:not(:last-child) {
+    padding-right: 15px;
+    background: url('../assignment5/img/route-flow.png') right center no-repeat;
 }
 
 .header-sub-block-left {
@@ -132,6 +160,7 @@ header {
 
 .route ul li a {
     text-decoration: none;
+    color: #ffffff;
 }
 
 .aside-container {
@@ -178,11 +207,16 @@ aside {
     background: url('../assignment5/img/underbar.png') center bottom no-repeat;
 }
 
+.middle-category ul li a span {
+    color: #679f13;
+}
+
 .middle-category ul li a {
     display: block;
     padding: 10px 0 10px 32px;
     text-decoration: none;
     font-size: 12px;
+    color: #272727;
     background: url('../assignment5/img/green-bullet.png') 0 0 no-repeat;
     background-position: 15px 11px;
 }
@@ -205,26 +239,85 @@ h2 {
     padding-left: 214px;
 }
 
-h3 {
+.first-title {
     padding-bottom: 17px;
     margin-bottom: 20px;
+    background: url('../assignment5/img/green-bar.png') 0 bottom repeat-x;
+}
+
+h3 {
+    padding: 1px 35px;
+    background: url('../assignment5/img/icon1.png') left center no-repeat;
 }
 
 .btn-section {
+    position: relative;
     margin-bottom: 10px;
+}
+
+.plus-btn {
+    background: url('../assignment5/img/plus-area-left.png') left center no-repeat;
+    padding-left: 21px;
+}
+
+.search-btn {
+    background: url('../assignment5/img/search-area-left.png') left center no-repeat;
+    padding-left: 23px;
+}
+
+.delete-btn {
+    background: url('../assignment5/img/delete-area-left.png') left center no-repeat;
+    padding-left: 23.6px;
+}
+
+.btn-right {
+    background: url('../assignment5/img/area-right.png') right center no-repeat;
+    padding-right: 10px;
+}
+
+.btn-middle {
+    background: url('../assignment5/img/area-middle.png') center center repeat-x;
 }
 
 .sidebar-wrap>ul {
     list-style: none;
 }
 
-.btn {
-    min-width: 90px;
-    padding: 6px;
+.btn-display {
+    display: inline-block;
 }
 
-.btn:last-child {
+.btn-display:not(:first-child) {
+    margin-left: 8px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 7px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    color: #636161;
+}
+
+.btn-word-spacing {
     word-spacing: 18px;
+}
+
+.select-section {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+}
+
+.select-section span {
+    font-weight: bold;
+    color: #1779b1;
+}
+
+select {
+    font-size: 12px;
 }
 
 caption {
@@ -237,13 +330,154 @@ table {
     border-top: 1px solid #999999;
     border-bottom: 1px solid #999999;
     text-align: center;
+    font-size: 12px;
+    box-shadow: 1px 1px #ffffff;
+    background-color: #f7f7f3;
+}
+
+thead {
+    background: linear-gradient(#ededeb, #cccfce);
+}
+
+tr:nth-child(2) {
+    background-color: #ebece6;
 }
 
 thead th{
+    padding: 11px 0;
     border-bottom: 1px solid #999999;
     border-right: 1px solid #999999;
 }
 
+td {
+    padding: 11px 0;
+    border-top: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+}
+
+
 .no-use-right-border {
     border-right: none;
+}
+
+.table1 {
+    margin-bottom: 15px;
+}
+
+.paging {
+    text-align: center;
+    font-size: 11px;
+    padding-bottom: 19px;
+    margin-bottom: 14px;
+    background: url('../assignment5/img/divide-section.png') center bottom repeat-x;
+}
+
+.left-side {
+    color: #333333;
+    text-decoration: none;
+}
+
+.right-side {
+    color: #333333;
+    text-decoration: none;
+}
+
+.prev-btn-left {
+    background: url('../assignment5/img/left-prev.png') left center no-repeat;
+    padding-left: 16px;
+}
+
+.prev-btn-right {
+    background: url('../assignment5/img/right-prev.png') right center no-repeat;
+    padding-right: 6px;
+}
+
+.pn-btn-middle {
+    background: url('../assignment5/img/middle-prev.png') center center repeat-x;
+    padding: 5px 4px;
+}
+
+.next-btn-left {
+    background: url('../assignment5/img/left-next.png') left center no-repeat;
+    padding-left: 6px;
+}
+
+.next-btn-right {
+    background: url('../assignment5/img/right-next.png') right center no-repeat;
+    padding-right: 15px;
+}
+
+.num-left {
+    background: url('../assignment5/img/num-left.png') left center no-repeat;
+    padding-left: 6px;
+}
+
+.num-right {
+    background: url('../assignment5/img/num-right.png') right center no-repeat;
+    padding-right: 5px;
+}
+
+.num-middle {
+    background: url('../assignment5/img/num-middle.png') center center repeat-x;
+}
+
+.num {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #333333;
+    padding: 5px 3px;
+}
+
+h4 {
+    font-size: 14px;
+    background: url('../assignment5/img/light-icon.png') left center no-repeat;
+    padding: 6px 31px;
+    margin-bottom: 10px;
+}
+
+.table2 {
+    margin-bottom: 13px;
+}
+
+.btn-section-right-align {
+    text-align: right;
+    margin-bottom: 526px;
+}
+
+footer {
+    height: 83px;
+    position: relative;
+    background-color: #cfcfbd;
+}
+
+.footer-img a{
+    display: block;
+    height: 43px;
+    width: 195px;
+    padding-top: 43px;
+    background: url('../assignment5/img/saas-logo-footer.png') center center no-repeat;
+    background-size: 195px auto;
+    overflow: hidden;
+}
+
+.footer-img {
+    position: absolute;
+    top: 19px;
+    left: 120px;
+}
+
+.footer-contents {
+    padding: 25px 0 25px 33px;
+    position: absolute;
+    right: 36px;
+    font-size: 12px;
+    color: #9f9f89;
+    background: url('../assignment5/img/footer-dv.png') left center no-repeat;
+    background-position: 0 7px;
+}
+
+address {
+    font-style: normal;
+    line-height: 1.5;
 }
