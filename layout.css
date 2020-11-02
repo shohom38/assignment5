@@ -15,9 +15,31 @@
 }
 
 .real-wrap {
-    min-width: 750px;
+    position: relative;
+    width: 755px;
+    margin: 20px auto;
     background-color: #e9e8e8;
     border: 3px solid #ffffff;
+}
+
+.real-wrap2 {
+    position: relative;
+    width: 570px;
+    margin: 20px auto;
+    background-color: #e9e8e8;
+    border: 3px solid #ffffff;
+}
+
+.exit-btn a{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    padding-top: 48px;
+    top: -23px;
+    right: -23px;
+    background: url('../assignment5/img/x-mark.png') right top no-repeat;
+    background-size: 48px auto;
 }
 
 .wrap-popup {

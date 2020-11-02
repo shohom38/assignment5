@@ -306,7 +306,7 @@ aside {
 
 .select-section {
     position: absolute;
-    bottom: 0;
+    bottom: 6px;
     right: 0;
     font-size: 12px;
 }
@@ -421,11 +421,33 @@ td {
     background: url('../assignment5/img/num-middle.png') center center repeat-x;
 }
 
+.clicked-num-left {
+    background: url('../assignment5/img/clicked-num-btn-left.png') left center no-repeat;
+    padding-left: 6px;
+}
+
+.clicked-num-right {
+    background: url('../assignment5/img/clicked-num-btn-right.png') right center no-repeat;
+    padding-right: 6px;
+}
+
+.clicked-num-middle {
+    background: url('../assignment5/img/clicked-num-btn-middle.png') center center repeat-x;
+}
+
 .num {
     display: inline-block;
     text-decoration: none;
     font-weight: bolder;
     color: #333333;
+    padding: 5px 3px;
+}
+
+.num-clicked {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #ffffff;
     padding: 5px 3px;
 }
 
@@ -496,13 +518,28 @@ address {
     margin-bottom: 10px;
 }
 
+.header2 {
+    background: url('../assignment5/img/popup2/popup2-head-left.png') left center no-repeat;
+    padding-left: 22px;
+    margin-bottom: 10px;
+}
+
 .header-section-right {
     background: url('../assignment5/img/popup1-head-right.png') right center no-repeat;
     padding-right: 30px;
 }
 
+.header-section-right2 {
+    background: url('../assignment5/img/popup2/popup2-head-right.png') right center no-repeat;
+    padding-right: 22px;
+}
+
 .header-section-middle {
     background: url('../assignment5/img/popup1-head-middle.png') center center repeat-x;
+}
+
+.header-section-middle2 {
+    background: url('../assignment5/img/popup2/popup2-head-middle.png') center center repeat-x;
 }
 
 #title-head {
@@ -510,6 +547,13 @@ address {
     font-size: 18px;
     background: url('../assignment5/img/head-icon.png') left center no-repeat;
     
+}
+
+#title-head2 {
+    padding: 14px 0 14px 60px;
+    font-size: 18px;
+    color: #1b416f;
+    background: url('../assignment5/img/popup2/write-icon.png') left center no-repeat;
 }
 
 #h3-select {
@@ -569,13 +613,13 @@ address {
 
 #name {
     min-width: 101px;
-    padding: 10px 0;
+    padding: 7px 0;
     font-size: 12px;
 }
 
 #searching {
     min-width: 360px;
-    padding: 10px 0;
+    padding: 7px 0;
     font-size: 12px;
 }
 
@@ -595,9 +639,10 @@ address {
 }
 
 .btn-last {
-    background: url('../assignment5/img/last-btn-left.png') left center no-repeat;
-    padding-left: 7px;
     display: inline-block;
+    padding-left: 7px;
+    margin: 0 10.5px 21px 10.5px;
+    background: url('../assignment5/img/last-btn-left.png') left center no-repeat;
 }
 
 .btn-last-right {
@@ -607,12 +652,14 @@ address {
 
 .btn-last-middle {
     background: url('../assignment5/img/last-btn-middle.png') center center repeat-x;
+    text-align: center;
 }
 
 .btn-last-middle>a {
     display: inline-block;
     text-decoration: none;
-    padding: 5px 23px;
+    padding: 5px 9px;
+    font-size: 14px;
     color: #ffffff;
-    word-spacing: 1px;
+    letter-spacing: 7px;
 }
