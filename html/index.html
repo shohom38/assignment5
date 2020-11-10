@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/layout.css">
+    <title>SaaS</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div id="header-wrap">
+                <div class="header-bg-right">
+                    <div class="header-bg-middle">
+                        <h1 id="logo">
+                            <a href="#">LinkSaaS</a>
+                        </h1>
+                        <nav id="nav-wrap">
+                            <div class="nav-bg-right">
+                                <div class="nav-bg-middle">
+                                    <ul>
+                                        <l1><a href="#" class="nav-a bg-deepred">Home</a></l1>
+                                        <l1><a href="#" class="nav-a">정보검색<img src="../img/arrow.png" alt="menuopenbtn"></a></l1>
+                                        <l1><a href="#" class="nav-a">전자정보<img src="../img/arrow.png" alt="menuopenbtn"></a></l1>
+                                        <l1"><a href="#" class="nav-a">My Library<img src="../img/arrow.png" alt="menuopenbtn"></a></l1>
+                                        <l1><a href="#" class="nav-a nav-b">My Library</a></l1>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="header-sub-block">
+            <div class="header-sub-block-left">
+                <div class="header-sub-block-right">
+                    <div class="route">
+                        <ul>
+                            <div class="route-flow-left">
+                                <div class="route-flow-right">
+                                    <div class="route-flow-middle">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">MyLibrary</a></li>
+                                        <li>회원정보</li>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aside-container">
+            <aside>
+                <div class="sidebar-wrap">
+                    <div class="left-category">
+                        <div class="right-category">
+                            <h2 id="h2-category-logo">My Library</h2>
+                        </div>
+                    </div>
+                    <div class="bottom-category">
+                        <div class="middle-category">
+                            <ul>
+                                <li><a href="#"><span>회원정보</span></a></li>
+                                <li><a href="#">대출정보관리</a></li>
+                                <li><a href="#">맞춤정보(SDI)신청</a></li>
+                                <li><a href="#">원문관리서비스</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="contents-box">
+                <div class="first-title">
+                    <h3 id="h3-SDI">맞춤정보(SDI) 신청</h3>
+                </div>
+                <div class="btn-section">
+                    <label for="popupbtn" class="btn plus-btn btn-display">
+                        <span class="btn-right">
+                            <span class="btn-middle">
+                                키워드 등록
+                            </span>
+                        </span>
+                    </label>
+                    <a href="#" class="btn search-btn btn-display">
+                        <span class="btn-right">
+                            <span class="btn-middle">
+                                저널검색
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#" class="btn btn-word-spacing delete-btn btn-display">
+                        <span class="btn-right">
+                            <span class="btn-middle">
+                                삭 제
+                            </span>
+                        </span>
+                    </a>
+                    <div class="select-section">
+                        총 <strong>3건</strong>
+                        <select name="출력현황" id="output">
+                            <option value="10개 출력현황">10개 출력</option>
+                            <option value="9개 출력현황">9개 출력</option>
+                            <option value="8개출력현황">8개 출력</option>
+                        </select>
+                    </div>
+                </div>
+                <table class="table1">
+                    <caption>맞춤정보신청표</caption>
+                    <colgroup>
+                        <col style="width: 6%; min-width: 100px;">
+                        <col style="width: 6%;">
+                        <col style="width: 15.5%;">
+                        <col style="width: 12.5%;">
+                        <col style="width: 46%;">
+                        <col style="width: 12%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th title="선택" class="no-use-left-border" scope="col">선택</th>
+                            <th title="번호" scope="col">번호</th>
+                            <th title="신청일" scope="col">신청일</th>
+                            <th title="신청방법" scope="col">신청방법</th>
+                            <th title="신청정보" scope="col">신청정보</th>
+                            <th title="제공건수" class="no-use-right-border" scope="col">제공건수</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input id="chkbox1" type="checkbox"></td>
+                            <td>1</td>
+                            <td>2010.10.13</td>
+                            <td>키워드</td>
+                            <td><label for="chkbox1">(서명:영화)</label></td>
+                            <td class="no-use-right-border">2</td>
+                        </tr>
+                        <tr>
+                            <td><input id="chkbox2" type="checkbox"></td>
+                            <td>1</td>
+                            <td>2010.10.13</td>
+                            <td>키워드</td>
+                            <td>(서명:영화)</td>
+                            <td class="no-use-right-border">2</td>
+                        </tr>
+                        <tr>
+                            <td><input id="chkbox2" type="checkbox"></td>
+                            <td>1</td>
+                            <td>2010.10.13</td>
+                            <td>키워드</td>
+                            <td>(서명:영화)</td>
+                            <td class="no-use-right-border">2</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="paging">
+                    <a href="#" class="left-side prev-btn-left btn-display">
+                        <span class="prev-btn-right">
+                            <span class="pn-btn-middle">
+                                PREV
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#" class="num-left btn-display num">
+                        <span class="num-right">
+                            <span class="num-middle">
+                                1
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#" class="num-clicked clicked-num-left btn-display">
+                        <span class="clicked-num-right">
+                            <span class="clicked-num-middle">
+                                2
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#" class="num-left btn-display num">
+                        <span class="num-right">
+                            <span class="num-middle">
+                                3
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#" class="num-left btn-display num">
+                        <span class="num-right">
+                            <span class="num-middle">
+                                4
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#" class="num-left btn-display num">
+                        <span class="num-right">
+                            <span class="num-middle">
+                                5
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#" class="num-left btn-display num">
+                        <span class="num-right">
+                            <span class="num-middle">
+                                6
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#" class="num-left btn-display num">
+                        <span class="num-right">
+                            <span class="num-middle">
+                                7
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#" class="num-left btn-display num">
+                        <span class="num-right">
+                            <span class="num-middle">
+                                8
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#" class="num-left btn-display num">
+                        <span class="num-right">
+                            <span class="num-middle">
+                                9
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#" class="num-left btn-display num">
+                        <span class="num-right">
+                            <span class="num-middle">
+                                10
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#" class="right-side next-btn-left btn-display">
+                        <span class="next-btn-right">
+                            <span class="pn-btn-middle">
+                                NEXT
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <h4 id="Info">제공정보</h4>
+                <div class="btn-section">
+                    <div class="select-section">
+                        총 <span>2건</span>
+                    </div>
+                </div>
+                <table class="table2">
+                    <caption>제공정보표</caption>
+                    <colgroup>
+                        <col style="width: 5%;">
+                        <col style="width: 5%;">
+                        <col style="width: 11%;">
+                        <col style="width: 9%;">
+                        <col style="width: 30%;">
+                        <col style="width: 9%;">
+                        <col style="width: 11%;">
+                        <col style="width: 10%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th title="선택" scope="col">선택</th>
+                            <th title="번호" scope="col">번호</th>
+                            <th title="제공일" scope="col">제공일</th>
+                            <th title="유형" scope="col">유형</th>
+                            <th title="신청정보" scope="col">신청정보</th>
+                            <th title="저자" scope="col">저자</th>
+                            <th title="출판사" scope="col">출판사</th>
+                            <th title="출판년" class="no-use-right-border" scope="col">출판년</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>2010.10.13</td>
+                            <td>키워드</td>
+                            <td>(서명:영화)</td>
+                            <td></td>
+                            <td></td>
+                            <td class="no-use-right-border">2007</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>2010.10.13</td>
+                            <td>키워드</td>
+                            <td>(서명:영화)</td>
+                            <td></td>
+                            <td></td>
+                            <td class="no-use-right-border">2007</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btn-section-right-align">
+                    <a href="#" class="btn delete-btn">
+                        <span class="btn-right">
+                            <span class="btn-middle btn-word-spacing">
+                                삭 제
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input id="popupbtn" class="popupbtn" type="checkbox">
+    <div class="opacity-bg">
+        <div class="real-wrap">
+            <div class="exit-btn"><label for="popupbtn"></label></div>
+            <div class="wrap-popup">
+                <div class="header">
+                    <div class="header-section-right">
+                        <div class="header-section-middle">
+                            <h1 id="title-head">학술지 목록</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-contents-box">
+                    <p>관심분야의 키워드를 등록하면 해당하는 신착도서와 저널정보를 받아볼 수 있습니다.</p>
+                    <div class="select-pannel-box">
+                        <div class="select-pannel">
+                            <div class="select-right">
+                                <div class="select-middle">
+                                    <h3 id="h3-select">선택</h3>
+                                    <div class="alphabet">
+                                        <div class="english">
+                                            <a href="#">A</a>
+                                            <a href="#">B</a>
+                                            <a href="#">C</a>
+                                            <a href="#">D</a>
+                                            <a href="#">E</a>
+                                            <a href="#">F</a>
+                                            <a href="#">G</a>
+                                            <a href="#">H</a>
+                                            <a href="#">I</a>
+                                            <a href="#">J</a>
+                                            <a href="#">K</a>
+                                            <a href="#">L</a>
+                                            <a href="#">M</a>
+                                            <a href="#">N</a>
+                                            <a href="#">O</a>
+                                            <a href="#">P</a>
+                                            <a href="#">Q</a>
+                                            <a href="#">R</a>
+                                            <a href="#">S</a>
+                                            <a href="#">T</a>
+                                            <a href="#">U</a>
+                                            <a href="#">V</a>
+                                            <a href="#">W</a>
+                                            <a href="#">X</a>
+                                            <a href="#">Y</a>
+                                            <a href="#">Z</a>
+                                        </div>
+                                        <div class="korean">
+                                            <a href="#">가</a>
+                                            <a href="#">나</a>
+                                            <a href="#">다</a>
+                                            <a href="#">라</a>
+                                            <a href="#">마</a>
+                                            <a href="#">바</a>
+                                            <a href="#">사</a>
+                                            <a href="#">아</a>
+                                            <a href="#">자</a>
+                                            <a href="#">차</a>
+                                            <a href="#">카</a>
+                                            <a href="#">타</a>
+                                            <a href="#">파</a>
+                                            <a href="#">하</a>
+                                        </div>
+                                        <div class="other">
+                                            <a href="#">[전체]</a>
+                                            <a href="#">[기타]</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-pannel-box">
+                        <div class="search-pannel">
+                            <div class="search-right">
+                                <div class="search-middle">
+                                    <h3 id="h3-search">검색어</h3>
+                                    <div class="search-contents-box">
+                                        <select name="namesearch" id="name">
+                                            <option value="서명">서명</option>
+                                            <option value="홍길동">홍길동</option>
+                                        </select>
+                                        <input type="text" value="Search..." id="searching">
+                                        <a href="#"><img src="../img/search-red-icon.png" alt="search-btn-img"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-num-section">
+                        총 <span>2건</span>
+                    </div>
+                    <div class="chart-section">
+                        <table>
+                            <caption>차트</caption>
+                            <colgroup>
+                                <col style="width: 7%;">
+                                <col style="width: 7%;">
+                                <col style="width: 62%;">
+                                <col style="width: 24%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">선택</th>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">신청정보</th>
+                                    <th scope="col" class="no-use-right-border">출판사</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" id="click-chk"></td>
+                                    <td>1</td>
+                                    <td><label for="click-chk">2002 시민의식 국제비교 조사</label></td>
+                                    <td class="no-use-right-border">공보처</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" id="click-chk2"></td>
+                                    <td>1</td>
+                                    <td><label for="click-chk2">2002 시민의식 국제비교 조사</label></td>
+                                    <td class="no-use-right-border">공보처</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" id="click-chk3"></td>
+                                    <td>1</td>
+                                    <td><label for="click-chk3">2002 시민의식 국제비교 조사</label></td>
+                                    <td class="no-use-right-border">공보처</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" id="click-chk4"></td>
+                                    <td>1</td>
+                                    <td><label for="click-chk4">2002 시민의식 국제비교 조사</label></td>
+                                    <td class="no-use-right-border">공보처</td>
+                                </tr>                        <tr>
+                                    <td><input type="checkbox" id="click-chk5"></td>
+                                    <td>1</td>
+                                    <td><label for="click-chk5">2002 시민의식 국제비교 조사</label></td>
+                                    <td class="no-use-right-border">공보처</td>
+                                </tr>                        <tr>
+                                    <td><input type="checkbox" id="click-chk6"></td>
+                                    <td>1</td>
+                                    <td><label for="click-chk6">2002 시민의식 국제비교 조사</label></td>
+                                    <td class="no-use-right-border">공보처</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="paging">
+                        <a href="#" class="left-side prev-btn-left btn-display">
+                            <span class="prev-btn-right">
+                                <span class="pn-btn-middle">
+                                    PREV
+                                </span>
+                            </span>
+                        </a>
+                        <a href="#" class="num-left btn-display num">
+                            <span class="num-right">
+                                <span class="num-middle">
+                                    1
+                                </span>
+                            </span>
+                        </a>
+                        <a href="#" class="num-clicked clicked-num-left btn-display">
+                            <span class="clicked-num-right">
+                                <span class="clicked-num-middle">
+                                    2
+                                </span>
+                            </span>
+                        </a>
+                        <a href="#" class="num-left btn-display num">
+                            <span class="num-right">
+                                <span class="num-middle">
+                                    3
+                                </span>
+                            </span>
+                        </a>
+                        <a href="#" class="num-left btn-display num">
+                            <span class="num-right">
+                                <span class="num-middle">
+                                    4
+                                </span>
+                            </span>
+                        </a>
+                        <a href="#" class="num-left btn-display num">
+                            <span class="num-right">
+                                <span class="num-middle">
+                                    5
+                                </span>
+                            </span>
+                        </a>
+                        <a href="#" class="num-left btn-display num">
+                            <span class="num-right">
+                                <span class="num-middle">
+                                    6
+                                </span>
+                            </span>
+                        </a>
+                        <a href="#" class="num-left btn-display num">
+                            <span class="num-right">
+                                <span class="num-middle">
+                                    7
+                                </span>
+                            </span>
+                        </a>
+                        <a href="#" class="num-left btn-display num">
+                            <span class="num-right">
+                                <span class="num-middle">
+                                    8
+                                </span>
+                            </span>
+                        </a>
+                        <a href="#" class="num-left btn-display num">
+                            <span class="num-right">
+                                <span class="num-middle">
+                                    9
+                                </span>
+                            </span>
+                        </a>
+                        <a href="#" class="num-left btn-display num">
+                            <span class="num-right">
+                                <span class="num-middle">
+                                    10
+                                </span>
+                            </span>
+                        </a>
+                        <a href="#" class="right-side next-btn-left btn-display">
+                            <span class="next-btn-right">
+                                <span class="pn-btn-middle">
+                                    NEXT
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="btn-text-align">
+                    <a href="#" class="btn-last">
+                        <span class="btn-last-right">
+                            <span class="btn-last-middle">
+                                확인
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#" class="btn-last">
+                        <span class="btn-last-right">
+                            <span class="btn-last-middle">
+                                <label for="popupbtn">닫기</label>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <label for="popupbtn"></label>
+    </div>
+    <footer>
+        <div class="footer-img">
+            <a href="#header-wrap">LinkSaaS</a>
+        </div>
+        <div class="footer-contents">
+            <address>대전광역시 유성구 관평동 1359번지 한산에스메가 631호 LinkSaaS TEL:(042) 863-0850 FAX:(042) 330-0055</address>
+            <p>All Contents copylight(C) 2000. reserverd by LinkSaaS.CO.,LTD</p>
+        </div>
+    </footer>
+</body>
+</html>
