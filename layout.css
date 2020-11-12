@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.nav-a img {
+    transition: 0.3s;
+    transform-origin: center center;
+}
+
+.nav-a img:hover {
+    transform: rotate(180deg);
+}
+
+.real-wrap {
+    position: relative;
+    width: 755px;
+    margin: 20px auto;
+    background-color: #e9e8e8;
+    border: 3px solid #ffffff;
+}
+
+.real-wrap2 {
+    position: relative;
+    width: 570px;
+    margin: 20px auto;
+    background-color: #e9e8e8;
+    border: 3px solid #ffffff;
+}
+
+.exit-btn a{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    padding-top: 48px;
+    top: -23px;
+    right: -23px;
+    background: url('../assignment5/img/x-mark.png') right top no-repeat;
+    background-size: 48px auto;
+}
+
+.wrap-popup {
+    padding: 37px 26px;
+}
+
+.popup-contents-box {
+    border: 1px solid #928f8f;
+    border-radius: 4px;
+    padding: 17px 24px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+}
+
+.select-pannel-box {
+    padding-top: 12px;
+    margin-bottom: 12px;
+}
+
+.search-pannel-box {
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+}
+
+.search-contents-box {
+    display: inline-block;
+    padding-left: 19px;
+}
+
+.search-contents-box>a>img {
+    vertical-align: middle;
+    line-height: 50px;
+    padding-left: 9px;
+}
+
+#h3-select {
+    display: inline-block;
+}
+
+#h3-search {
+    display: inline-block;
+}
+
+.chart-section {
+    position: relative;
+}
+
+.chart-num-section {
+    padding-bottom: 7px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.chart-num-section span {
+    color: #1779b1;
+    font-weight: bold;
+}
+
+.chart-section {
+    margin-bottom: 13px;
+}
+
+.alphabet {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.korean {
+    display: inline-block;
+    padding-left: 1px;
+    padding-right: 19px;
+}
+
+.other {
+    display: inline-block;
+}
+
+.btn-text-align {
+    text-align: center;
+}
