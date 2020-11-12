@@ -178,12 +178,6 @@ header {
     border-radius: 3px;
 }
 
-aside {
-    width: 166px;
-    margin: 0 auto;
-    position: absolute;
-}
-
 .left-category {
     background: url('../img/left-category.png') left center no-repeat;
     padding-left: 36px;
@@ -288,6 +282,12 @@ aside {
 .btn-middle {
     background: url('../img/area-middle.png') center center repeat-x;
     padding: 7px 4px;
+}
+
+.sidebar-wrap {
+    width: 166px;
+    margin: 0 auto;
+    position: absolute;
 }
 
 .sidebar-wrap>ul {

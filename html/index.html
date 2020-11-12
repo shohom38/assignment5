@@ -21,11 +21,36 @@
                             <div class="nav-bg-right">
                                 <div class="nav-bg-middle">
                                     <ul>
-                                        <l1><a href="#" class="nav-a bg-deepred">Home</a></l1>
-                                        <l1><a href="#" class="nav-a">정보검색<img src="../img/arrow.png" alt="menuopenbtn"></a></l1>
-                                        <l1><a href="#" class="nav-a">전자정보<img src="../img/arrow.png" alt="menuopenbtn"></a></l1>
-                                        <l1"><a href="#" class="nav-a">My Library<img src="../img/arrow.png" alt="menuopenbtn"></a></l1>
-                                        <l1><a href="#" class="nav-a nav-b">My Library</a></l1>
+                                        <l1>
+                                            <a href="#" class="nav-a bg-deepred">Home</a>
+                                            <ul class="hover-popup">
+                                                <li class="hover-popup-list"><a href="#">논문검색</a></li>
+                                                <li class="hover-popup-list"><a href="#">단행본검색</a></li>
+                                            </ul>
+                                        </l1>
+                                        <l1>
+                                            <a href="#" class="nav-a">정보검색<img src="../img/arrow.png" alt="menuopenbtn"></a>
+                                            <ul class="hover-popup">
+                                                <li class="hover-popup-list"><a href="#">논문검색</a></li>
+                                                <li class="hover-popup-list"><a href="#">단행본검색</a></li>
+                                            </ul>
+                                        </l1>
+                                        <l1>
+                                            <a href="#" class="nav-a">전자정보<img src="../img/arrow.png" alt="menuopenbtn"></a>
+                                            <ul class="hover-popup">
+                                                <li class="hover-popup-list"><a href="#">논문검색</a></li>
+                                                <li class="hover-popup-list"><a href="#">단행본검색</a></li>
+                                            </ul>
+                                        </l1>
+                                        <l1>
+                                            <a href="#" class="nav-a">My Library<img src="../img/arrow.png" alt="menuopenbtn"></a>
+                                            <ul class="hover-popup">
+                                                <li class="hover-popup-list"><a href="#">논문검색</a></li>
+                                                <li class="hover-popup-list"><a href="#">단행본검색</a></li>
+                                            </ul>
+                                        </l1>
+                                        <l1>
+                                            <a href="#" class="nav-a nav-b">My Library</a></l1>
                                     </ul>
                                 </div>
                             </div>
@@ -54,25 +79,23 @@
             </div>
         </div>
         <div class="aside-container">
-            <aside>
-                <div class="sidebar-wrap">
-                    <div class="left-category">
-                        <div class="right-category">
-                            <h2 id="h2-category-logo">My Library</h2>
-                        </div>
-                    </div>
-                    <div class="bottom-category">
-                        <div class="middle-category">
-                            <ul>
-                                <li><a href="#"><span>회원정보</span></a></li>
-                                <li><a href="#">대출정보관리</a></li>
-                                <li><a href="#">맞춤정보(SDI)신청</a></li>
-                                <li><a href="#">원문관리서비스</a></li>
-                            </ul>
-                        </div>
+            <div class="sidebar-wrap">
+                <div class="left-category">
+                    <div class="right-category">
+                        <h2 id="h2-category-logo">My Library</h2>
                     </div>
                 </div>
-            </aside>
+                <div class="bottom-category">
+                    <div class="middle-category">
+                        <ul>
+                            <li><a href="#"><span>회원정보</span></a></li>
+                            <li><a href="#">대출정보관리</a></li>
+                            <li><a href="#">맞춤정보(SDI)신청</a></li>
+                            <li><a href="#">원문관리서비스</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="contents-box">
                 <div class="first-title">
                     <h3 id="h3-SDI">맞춤정보(SDI) 신청</h3>
@@ -101,7 +124,7 @@
                     </a>
                     <div class="select-section">
                         총 <strong>3건</strong>
-                        <select name="출력현황" id="output">
+                        <select name="status" id="output" title="출력현황">
                             <option value="10개 출력현황">10개 출력</option>
                             <option value="9개 출력현황">9개 출력</option>
                             <option value="8개출력현황">8개 출력</option>
@@ -244,7 +267,7 @@
                 <h4 id="Info">제공정보</h4>
                 <div class="btn-section">
                     <div class="select-section">
-                        총 <span>2건</span>
+                        총 <span><strong>2건</strong></span>
                     </div>
                 </div>
                 <table class="table2">
@@ -397,7 +420,7 @@
                         </div>
                     </div>
                     <div class="chart-num-section">
-                        총 <span>2건</span>
+                        총 <span><strong>2건</strong></span>
                     </div>
                     <div class="chart-section">
                         <table>
