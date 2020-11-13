@@ -263,6 +263,7 @@ header {
 .search-btn {
     background: url('../img/search-area-left.png') left center no-repeat;
     padding: 7px 0 7px 23px;
+    cursor: pointer;
 }
 
 .delete-btn {
@@ -512,9 +513,12 @@ address {
 
 .popup-contents-box>p {
     background: url('../img/green-bullet.png') left center no-repeat;
-    padding-left: 21px;
+    padding-left: 23px;
     margin-bottom: 14px;
     font-size: 12px;
+    word-spacing: 2px;
+    vertical-align: middle;
+    line-height: 13.5px;
 }
 
 .header {
