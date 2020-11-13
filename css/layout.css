@@ -10,10 +10,6 @@
     transform-origin: center center;
 }
 
-.nav-a img:hover {
-    transform: rotate(180deg);
-}
-
 .opacity-bg {
     position: fixed;
     top: 0;
@@ -94,10 +90,11 @@
     padding-left: 19px;
 }
 
-.search-contents-box>a>img {
+.searching-btn {
+    padding: 16px 22px;
+    border:none;
     vertical-align: middle;
-    line-height: 50px;
-    padding-left: 9px;
+    background: url('../img/search-red-icon.png') 0 0 no-repeat;
 }
 
 #h3-select {
@@ -129,6 +126,7 @@
 
 .alphabet {
     display: inline-block;
+    position: relative;
     vertical-align: middle;
 }
 
@@ -139,7 +137,10 @@
 }
 
 .other {
-    display: inline-block;
+    position: absolute;
+    top: 17px;
+    right: 3px;
+
 }
 
 .btn-text-align {
@@ -164,4 +165,59 @@ input[id="popupbtn"]:checked + div {
 
 .hover-popup {
     display: none;
+    list-style: none;
+    position: absolute;
+    top: 44px;
+    left: 3px;
+    min-width: 140px;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.hover-popup-list>a {
+    display: block;
+    color: #6a983c;
+    padding: 6px 11px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.hover-popup-list>a:hover {
+    background-color: #7eb140;
+    color: white;
+}
+
+.nav-list:hover .hover-popup {
+    display: block;
+}
+
+.nav-list:hover .nav-hover-a {
+    background: #ffffff;
+}
+
+.hover-popup:hover {
+    display: block;
+}
+
+.nav-list:hover .nav-hover-a>img {
+    transform: rotate(180deg);
+}
+
+.nav-list:first-child {
+    width: 130px;
+}
+
+.hover-popup-list a{
+    text-decoration: none;
+}
+
+.nav-list {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-hover-a:hover {
+    background-color: #ffffff;
+    color: #578e12;
+    font-weight: bold;
 }
