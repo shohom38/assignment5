@@ -36,18 +36,32 @@
     transform: translate(-50%, -50%);
     width: 755px;
     height: 780px;
-    margin: 20px auto;
+    margin: 0 auto;
     background-color: #e9e8e8;
     border: 3px solid #ffffff;
     z-index: 2;
 }
 
+.real-wrap2 + label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: 1;
+}
+
 .real-wrap2 {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 570px;
-    margin: 20px auto;
+    margin: 0 auto;
     background-color: #e9e8e8;
     border: 3px solid #ffffff;
+    z-index: 2;
 }
 
 .exit-btn>label {
@@ -70,7 +84,7 @@
 .popup-contents-box {
     border: 1px solid #928f8f;
     border-radius: 4px;
-    padding: 17px 24px;
+    padding: 17px;
     margin-bottom: 15px;
     background-color: #ffffff;
 }
@@ -94,6 +108,7 @@
     padding: 16px 22px;
     border:none;
     vertical-align: middle;
+    cursor: pointer;
     background: url('../img/search-red-icon.png') 0 0 no-repeat;
 }
 
@@ -130,6 +145,12 @@
     vertical-align: middle;
 }
 
+.alphabet-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 .korean {
     display: inline-block;
     padding-left: 1px;
@@ -138,7 +159,7 @@
 
 .other {
     position: absolute;
-    top: 17px;
+    top: 18px;
     right: 3px;
 
 }
@@ -162,6 +183,20 @@ input[id="popupbtn"]:checked + div {
     visibility: visible;
 }
 
+input[id="journalbtn"] {
+    display: none;
+}
+
+input[id="journalbtn"] + div {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+}
+
+input[id="journalbtn"]:checked + div {
+    opacity: 1;
+    visibility: visible;
+}
 
 .hover-popup {
     display: none;
@@ -220,4 +255,38 @@ input[id="popupbtn"]:checked + div {
     background-color: #ffffff;
     color: #578e12;
     font-weight: bold;
+}
+
+.keyword-btn-left {
+    border: none;
+    background: url('../img/popup2/keyword-left.png') left 0 no-repeat;
+    padding: 6px 5px 6px 3px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.keyword-btn-right {
+    background: url('../img/popup2/keyword-right.png') right 0 no-repeat;
+    padding: 6px 5px 6px 0;
+}
+
+.keyword-btn-middle {
+    background: url('../img/popup2/keyword-middle.png') center 0 repeat-x;
+    padding: 6px 7px;
+}
+
+.keyword-btn-middle-first {
+    background: url('../img/popup2/keyword-middle.png') center 0 repeat-x;
+    padding: 6px 14px;
+}
+
+.circle-arrow {
+    background: url('../img/popup2/circlearrow.png') left center no-repeat;
+    padding: 5px 23px;
+}
+
+.keyword-search {
+    height: 28px;
+    width: 66%;
 }
