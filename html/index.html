@@ -20,36 +20,32 @@
                         <nav id="nav-wrap">
                             <div class="nav-bg-right">
                                 <div class="nav-bg-middle">
-                                    <ul>
-                                        <l1>
+                                    <ul id="navbar-guide">
+                                        <l1 class="nav-list">
                                             <a href="#" class="nav-a bg-deepred">Home</a>
+                                        </l1>
+                                        <l1 class="nav-list">
+                                            <a href="#" class="nav-a nav-hover-a">정보검색<img src="../img/arrow.png" alt="menuopenbtn"></a>
                                             <ul class="hover-popup">
                                                 <li class="hover-popup-list"><a href="#">논문검색</a></li>
                                                 <li class="hover-popup-list"><a href="#">단행본검색</a></li>
                                             </ul>
                                         </l1>
-                                        <l1>
-                                            <a href="#" class="nav-a">정보검색<img src="../img/arrow.png" alt="menuopenbtn"></a>
+                                        <l1 class="nav-list">
+                                            <a href="#" class="nav-a nav-hover-a">전자정보<img src="../img/arrow.png" alt="menuopenbtn"></a>
                                             <ul class="hover-popup">
                                                 <li class="hover-popup-list"><a href="#">논문검색</a></li>
                                                 <li class="hover-popup-list"><a href="#">단행본검색</a></li>
                                             </ul>
                                         </l1>
-                                        <l1>
-                                            <a href="#" class="nav-a">전자정보<img src="../img/arrow.png" alt="menuopenbtn"></a>
+                                        <l1 class="nav-list">
+                                            <a href="#" class="nav-a nav-hover-a">My Library<img src="../img/arrow.png" alt="menuopenbtn"></a>
                                             <ul class="hover-popup">
                                                 <li class="hover-popup-list"><a href="#">논문검색</a></li>
                                                 <li class="hover-popup-list"><a href="#">단행본검색</a></li>
                                             </ul>
                                         </l1>
-                                        <l1>
-                                            <a href="#" class="nav-a">My Library<img src="../img/arrow.png" alt="menuopenbtn"></a>
-                                            <ul class="hover-popup">
-                                                <li class="hover-popup-list"><a href="#">논문검색</a></li>
-                                                <li class="hover-popup-list"><a href="#">단행본검색</a></li>
-                                            </ul>
-                                        </l1>
-                                        <l1>
+                                        <l1 class="nav-list">
                                             <a href="#" class="nav-a nav-b">My Library</a></l1>
                                     </ul>
                                 </div>
@@ -408,12 +404,14 @@
                                 <div class="search-middle">
                                     <h3 id="h3-search">검색어</h3>
                                     <div class="search-contents-box">
-                                        <select name="namesearch" id="name">
-                                            <option value="서명">서명</option>
-                                            <option value="홍길동">홍길동</option>
-                                        </select>
-                                        <input type="text" value="Search..." id="searching">
-                                        <a href="#"><img src="../img/search-red-icon.png" alt="search-btn-img"></a>
+                                        <form action="#">
+                                            <select name="namesearch" id="name">
+                                                <option value="서명">서명</option>
+                                                <option value="홍길동">홍길동</option>
+                                            </select>
+                                            <input type="text" placeholder="Search..." id="searching">
+                                            <button class="searching-btn"></button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
