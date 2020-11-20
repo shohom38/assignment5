@@ -35,10 +35,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 755px;
-    height: 780px;
+    height: 664px;
     margin: 0 auto;
     background-color: #e9e8e8;
-    border: 3px solid #ffffff;
+    border: 6px solid #ffffff;
     z-index: 2;
 }
 
@@ -60,7 +60,7 @@
     width: 570px;
     margin: 0 auto;
     background-color: #e9e8e8;
-    border: 3px solid #ffffff;
+    border: 6px solid #ffffff;
     z-index: 2;
 }
 
@@ -77,14 +77,14 @@
     cursor: pointer;
 }
 
-.wrap-popup {
-    padding: 37px 26px;
+.wrap-popup2 {
+    padding: 31px 19px 14px 19px;
 }
 
 .popup-contents-box {
     border: 1px solid #928f8f;
     border-radius: 4px;
-    padding: 17px;
+    padding: 17px 31px;
     margin-bottom: 15px;
     background-color: #ffffff;
 }
@@ -97,6 +97,7 @@
 .search-pannel-box {
     padding-bottom: 12px;
     margin-bottom: 16px;
+    position: relative;
 }
 
 .search-contents-box {
@@ -109,6 +110,8 @@
     border:none;
     vertical-align: middle;
     cursor: pointer;
+    position: absolute;
+    right: 9px;
     background: url('../img/search-red-icon.png') 0 0 no-repeat;
 }
 
@@ -146,9 +149,11 @@
 }
 
 .alphabet-btn {
+    padding-right: 1px;
     background: none;
     border: none;
     cursor: pointer;
+    color: #4a4949;
 }
 
 .korean {
@@ -238,10 +243,6 @@ input[id="journalbtn"]:checked + div {
     transform: rotate(180deg);
 }
 
-.nav-list:first-child {
-    width: 130px;
-}
-
 .hover-popup-list a{
     text-decoration: none;
 }
@@ -259,25 +260,28 @@ input[id="journalbtn"]:checked + div {
 
 .keyword-btn-left {
     border: none;
-    background: url('../img/popup2/keyword-left.png') left 0 no-repeat;
+    background: url('../img/popup2/keyword-left.png') left center no-repeat;
     padding: 6px 5px 6px 3px;
-    margin-bottom: 10px;
     cursor: pointer;
     outline: none;
 }
 
+.keyword-search-container:not(:last-child) {
+    margin-bottom: 10px;
+}
+
 .keyword-btn-right {
-    background: url('../img/popup2/keyword-right.png') right 0 no-repeat;
+    background: url('../img/popup2/keyword-right.png') right center no-repeat;
     padding: 6px 5px 6px 0;
 }
 
 .keyword-btn-middle {
-    background: url('../img/popup2/keyword-middle.png') center 0 repeat-x;
+    background: url('../img/popup2/keyword-middle.png') center center repeat-x;
     padding: 6px 7px;
 }
 
 .keyword-btn-middle-first {
-    background: url('../img/popup2/keyword-middle.png') center 0 repeat-x;
+    background: url('../img/popup2/keyword-middle.png') center center repeat-x;
     padding: 6px 14px;
 }
 
@@ -288,5 +292,5 @@ input[id="journalbtn"]:checked + div {
 
 .keyword-search {
     height: 28px;
-    width: 66%;
+    width: 63%;
 }
