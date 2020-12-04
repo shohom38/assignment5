@@ -17,12 +17,15 @@ body {
 }
 
 header {
-    min-width: 944px;
+    min-width: 940px;
+    margin: 0 auto;
 }
 
 #header-wrap {
     display: block;
     position: relative;
+    width: 940px;
+    margin: 0 auto;
     height: 72px;
     background: url('../img/header-bg-left.png') left top no-repeat;
     padding-left: 2px;
@@ -56,18 +59,19 @@ header {
 
 #nav-wrap {
     position: absolute;
-    top: 15px;
+    top: 14px;
     right: 13px;
     cursor: pointer;
+    width: 660px;
 }
 
 .nav-bg-right {
-    background: url('../img/nav-right.png') right center no-repeat;
+    background: url('../img/header/nav-right.png') right center no-repeat;
     padding-right: 12px;
 }
 
 .nav-bg-middle {
-    background: url('../img/nav-middle.png') left center repeat-x;
+    background: url('../img/header/nav-middle.png') left center repeat-x;
 }
 
 .nav-bg-middle>ul>li {
@@ -76,6 +80,7 @@ header {
 }
 
 .nav-a {
+    margin-right: -4px;
     display: inline-block;
     width: 133px;
     white-space: nowrap;
@@ -85,7 +90,7 @@ header {
     font-weight: bold;
     text-decoration: none;
     color: #ffffff;
-    background: url('../img/divider.png') right center no-repeat;
+    background: url('../img/header/divider.png') right center no-repeat;
 }
 
 .nav-c {
@@ -98,8 +103,8 @@ header {
     top: 1px;
 }
 
-.bg-deepred {
-    background: url('../img/nav-bar-color.png') center center no-repeat;
+.bg-deep {
+    background: url('../img/header/nav-hbg.png') center center no-repeat;
     padding-left: 45px;
     width: 127px;
 }
@@ -111,23 +116,24 @@ header {
 }
 
 .header-sub-block {
-    padding: 0 5px;
+    width: 930px;
+    margin: 0 auto;
 }
 
-.route ul li {
-    display: inline-block;
+.route-ul li {
+    float: left;
     list-style: none;
 }
 
 .route-flow-middle li {
-    padding: 6px 8px;
+    padding: 4px 8px;
     font-size: 12px;
     vertical-align: middle;
     color: #ffffff;
 }
 
 .route-flow-middle li:first-child {
-    padding: 6px 8px 6px 6px;
+    padding: 4px 8px 4px 6px;
 }
 
 .route {
@@ -140,8 +146,12 @@ header {
 }
 
 .route-flow-left {
+    position: absolute;
+    top: 19px;
+    right: -3px;
     background: url('../img/route-left.png') left center no-repeat;
     padding-left: 7px;
+    height: 22px;
 }
 
 .route-flow-right {
@@ -151,12 +161,13 @@ header {
 
 .route-flow-middle {
     background: url('../img/route-middle.png') center center repeat-x;
+    height: 22px;
 
 }
 
 .route-flow-middle li:not(:last-child) {
     padding-right: 15px;
-    background: url('../img/route-flow.png') right center no-repeat;
+    background: url('../img/route-flow.png') right 0 no-repeat;
 }
 
 .header-sub-block-left {
@@ -169,21 +180,16 @@ header {
     padding-right: 20px;
 }
 
-.route ul {
-    position: absolute;
-    top: 17px;
-    right: -3px;
-}
-
-.route ul li a {
+.route-ul li a {
     text-decoration: none;
     color: #ffffff;
 }
 
 .aside-container {
+    width: 940px;
     padding: 25px 25px 0 22px;
     position: relative;
-    margin-bottom: 19px;
+    margin: 0 auto 19px auto;
     border: 1px solid #cfcebe;
     border-radius: 3px;
     background-color: #ffffff;
@@ -211,7 +217,7 @@ header {
 }
 
 .middle-category ul li {
-    padding-left: 7px;
+    padding-left: 3px;
     padding-right: 7px;
 }
 
@@ -247,25 +253,28 @@ header {
     color: #ffffff;
 }
 
+#h2-category-logo>img {
+    vertical-align: middle;
+}
+
 .contents-box {
-    padding-left: 192px;
+    padding-left: 190px;
 }
 
 .first-title {
-    padding-left: 6px;
-    padding-bottom: 15px;
-    margin-bottom: 10px;
+    padding: 3px 0 10px 6px;
+    margin-bottom: 11px;
     background: url('../img/green-bar.png') 0 bottom repeat-x;
 }
 
 #h3-SDI {
-    padding: 7px 35px 0 35px;
+    padding: 7px 35px 0 38px;
     background: url('../img/icon1.png') left center no-repeat;
 }
 
 .btn-section {
     position: relative;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
 .plus-btn {
@@ -289,6 +298,11 @@ header {
 .btn-right {
     background: url('../img/area-right.png') right center no-repeat;
     padding: 7px 10px 7px 0;
+}
+
+.btn-right-plus {
+    background: url('../img/area-right.png') right center no-repeat;
+    padding: 7px 5px 7px 0;
 }
 
 .btn-middle {
@@ -328,7 +342,7 @@ header {
 
 .select-section {
     position: absolute;
-    bottom: 7px;
+    bottom: 9px;
     right: 10px;
     font-size: 12px;
 }
@@ -368,12 +382,12 @@ thead th{
     padding: 8.5px 0;
     border-bottom: 1px solid #999999;
     border-right: 1px solid #999999;
-    height: 32px;
+    height: 31px;
     color: #585953;
 }
 
 .td-size {
-    height: 32px;
+    height: 31px;
     padding: 11px 11px;
     border-top: 1px solid #d9d9d9;
     border-right: 1px solid #d9d9d9;
@@ -493,6 +507,10 @@ thead th{
     margin-bottom: 10px;
 }
 
+#Info>img {
+    vertical-align: middle;
+}
+
 .table2 {
     margin-bottom: 9px;
 }
@@ -516,10 +534,10 @@ thead th{
 .footer-img a{
     display: inline-block;
     height: 43px;
-    width: 195px;
+    width: 186px;
     padding-top: 43px;
-    background: url('../img/saas-logo-footer.png') center center no-repeat;
-    background-size: 195px auto;
+    background: url('../img/footer/footer-logo.png') center center no-repeat;
+    background-size: 186px auto;
     overflow: hidden;
 }
 
@@ -530,9 +548,9 @@ thead th{
 }
 
 .footer-contents {
-    padding: 25px 0 25px 33px;
+    padding: 25px 0 25px 38px;
     position: absolute;
-    right: 62px;
+    right: 117px;
     font-size: 12px;
     color: #9f9f89;
     background: url('../img/footer-dv.png') left center no-repeat;
@@ -541,7 +559,8 @@ thead th{
 
 address {
     font-style: normal;
-    line-height: 1.5;
+    line-height: 11px;
+    margin-bottom: 5px;
 }
 
 
@@ -719,4 +738,8 @@ address {
 
 .letter-spacing-date {
     letter-spacing: 8px;
+}
+
+.copyright {
+    padding-left: 2px;
 }
