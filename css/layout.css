@@ -5,7 +5,7 @@
     font-family: 'Nanum Gothic', sans-serif;
 }
 
-.nav-a img {
+.arrow {
     transition: 0.3s;
     transform-origin: center center;
 }
