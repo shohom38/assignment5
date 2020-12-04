@@ -11,6 +11,8 @@ body {
 }
 
 .wrap {
+    width: 1024px;
+    margin: 0 auto;
     padding: 0 40px;
 }
 
@@ -124,6 +126,9 @@ header {
     color: #ffffff;
 }
 
+.route-flow-middle li:first-child {
+    padding: 6px 8px 6px 6px;
+}
 
 .route {
     display: block;
@@ -166,7 +171,7 @@ header {
 
 .route ul {
     position: absolute;
-    top: 19px;
+    top: 17px;
     right: -3px;
 }
 
@@ -497,10 +502,15 @@ thead th{
     margin-bottom: 521px;
 }
 
-footer {
+#footer-wrap{
     height: 84px;
-    position: relative;
     background-color: #cfcfbd;
+}
+
+.footer-container {
+    width: 1024px;
+    position: relative;
+    margin: 0 auto;
 }
 
 .footer-img a{
@@ -516,7 +526,7 @@ footer {
 .footer-img {
     position: absolute;
     top: 19px;
-    left: 114gpx;
+    left: 119px;
 }
 
 .footer-contents {
