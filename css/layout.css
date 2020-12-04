@@ -227,7 +227,7 @@ input[id="journalbtn"]:checked + div {
     color: white;
 }
 
-.nav-list:hover .hover-popup {
+.nav-list:focus .hover-popup {
     display: block;
 }
 
@@ -235,7 +235,7 @@ input[id="journalbtn"]:checked + div {
     background: #ffffff;
 }
 
-.hover-popup:hover {
+.hover-popup:focus {
     display: block;
 }
 
