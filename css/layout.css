@@ -232,14 +232,14 @@ input[id="journalbtn"]:checked + div {
 }
 
 .nav-list:hover .nav-hover-a {
-    background: #ffffff;
+    background: url('../img/header/ml-hover.png') center center no-repeat;
 }
 
 .hover-popup:focus {
     display: block;
 }
 
-.nav-list:hover .nav-hover-a>img {
+.nav-list:hover .arrow {
     transform: rotate(180deg);
 }
 
@@ -253,7 +253,7 @@ input[id="journalbtn"]:checked + div {
 }
 
 .nav-hover-a:hover {
-    background-color: #ffffff;
+    background: url('../img/header/ml-hover.png') center center no-repeat;
     color: #578e12;
     font-weight: bold;
 }

@@ -93,20 +93,30 @@ header {
     background: url('../img/header/divider.png') right center no-repeat;
 }
 
-.nav-c {
-    background: none;
+.nav-a:first-child {
+    padding-left: 14px 30px 14px 34px;
 }
 
-.nav-a img {
+.nav-c {
+    background: none;
+    padding-left: 20px;
+}
+
+.arrow {
     position: relative;
-    left: 6px;
-    top: 1px;
+    left: 9px;
+    top: 0;
 }
 
 .bg-deep {
     background: url('../img/header/nav-hbg.png') center center no-repeat;
-    padding-left: 45px;
+    padding-left: 41px;
+    height: 43px;
     width: 127px;
+}
+
+.bg-deep:hover {
+    background: url('../img/header/hover-home.png') left center no-repeat;
 }
 
 .nav-b {
@@ -274,7 +284,7 @@ header {
 
 .btn-section {
     position: relative;
-    margin-bottom: 4px;
+    margin-bottom: 7px;
 }
 
 .plus-btn {
@@ -307,7 +317,7 @@ header {
 
 .btn-middle {
     background: url('../img/area-middle.png') center center repeat-x;
-    padding: 7px 4px;
+    padding: 7px 6px;
 }
 
 .sidebar-wrap {
@@ -325,7 +335,7 @@ header {
 }
 
 .btn-display:not(:first-child) {
-    margin-left: 5px;
+    margin-left: 7px;
 }
 
 .btn {
@@ -408,11 +418,15 @@ thead th{
     margin-bottom: 15px;
 }
 
+.table1:last-child {
+    margin-bottom: 15px;
+}
+
 .paging {
     text-align: center;
     font-size: 11px;
     padding-bottom: 19px;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
     background: url('../img/divide-section.png') center bottom repeat-x;
 }
 
