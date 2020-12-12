@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    min-width: 940px;
+    width: 940px;
     margin: 0 auto;
 }
 
@@ -65,13 +65,18 @@ header {
     width: 660px;
 }
 
+.nav-bg-left {
+    background: url('../img/header/nav-left.png') left center no-repeat;
+    padding-left: 4px;
+}
+
 .nav-bg-right {
     background: url('../img/header/nav-right.png') right center no-repeat;
     padding-right: 12px;
 }
 
 .nav-bg-middle {
-    background: url('../img/header/nav-middle.png') left center repeat-x;
+    background: url('../img/header/nav-middle.png') 0 center repeat-x;
 }
 
 .nav-bg-middle>ul>li {
@@ -85,7 +90,7 @@ header {
     width: 133px;
     white-space: nowrap;
     position: relative;
-    padding: 14px 27px 14px 32px;
+    padding: 14px 27px 14px 29px;
     vertical-align: middle;
     line-height: 14px;
     font-size: 14px;
@@ -101,7 +106,7 @@ header {
 }
 
 .nav-pd-3 {
-    padding: 14px 30px 14px 32px;
+    padding: 14px 30px 14px 27px;
 }
 
 .nav-pd-4 {
@@ -110,7 +115,7 @@ header {
 
 .nav-c {
     background: none;
-    padding-left: 20px;
+    padding-left: 2px;
 }
 
 .arrow {
@@ -121,13 +126,18 @@ header {
 
 .bg-deep {
     background: url('../img/header/divider.png') right center no-repeat;
-    padding-left: 41px;
+    padding-left: 36px;
     height: 43px;
     width: 127px;
 }
 
 .bg-deep:hover {
     background: url('../img/header/hover-home.png') left center no-repeat;
+}
+
+.bg-deep:hover .nav-bg-left {
+    background: url('../img/header/hover-left.png') left center no-repeat;
+    padding-left: 4px;
 }
 
 .nav-b {
@@ -208,7 +218,7 @@ header {
 
 .aside-container {
     width: 940px;
-    padding: 25px 25px 0 22px;
+    padding: 23px 25px 0 22px;
     position: relative;
     margin: 0 auto 19px auto;
     border: 1px solid #cfcebe;
@@ -260,6 +270,24 @@ header {
     background-position: 15px 11px;
 }
 
+#dif-side-padding1 {
+    padding-top: 11px;
+}
+
+#dif-side-padding2 {
+    padding-top: 8px;
+}
+
+#dif-side-padding3 {
+    padding-top: 6px;
+    padding-bottom: 11px;
+}
+
+#dif-side-padding4 {
+    padding-top: 11px;
+}
+
+
 .bottom-category {
     background: url('../img/category-bottom.png') center bottom no-repeat;
     padding-bottom: 10px;
@@ -279,6 +307,7 @@ header {
 }
 
 .contents-box {
+    padding-top: 2px;
     padding-left: 190px;
 }
 
@@ -295,7 +324,7 @@ header {
 
 .btn-section {
     position: relative;
-    margin-bottom: 7px;
+    margin-bottom: 4px;
 }
 
 .plus-btn {
@@ -331,6 +360,11 @@ header {
     padding: 7px 6px;
 }
 
+.x-btn-middle {
+    background: url('../img/area-middle.png') center center repeat-x;
+    padding: 7px 15px 7px 6px;
+}
+
 .sidebar-wrap {
     width: 166px;
     margin: 0 auto;
@@ -363,7 +397,14 @@ header {
 
 .select-section {
     position: absolute;
-    bottom: 9px;
+    bottom: 12px;
+    right: 10px;
+    font-size: 12px;
+}
+
+.select-section2 {
+    position: absolute;
+    bottom: 10px;
     right: 10px;
     font-size: 12px;
 }
@@ -436,7 +477,7 @@ thead th{
 .paging {
     text-align: center;
     font-size: 11px;
-    padding-bottom: 19px;
+    padding-bottom: 23px;
     margin-bottom: 16px;
     background: url('../img/divide-section.png') center bottom repeat-x;
 }
@@ -595,6 +636,7 @@ address {
     margin-bottom: 14px;
     font-size: 12px;
     word-spacing: 2px;
+    white-space: nowrap;
     vertical-align: middle;
     line-height: 13.5px;
     color: #40403e;
@@ -648,7 +690,7 @@ address {
 #h3-select {
     font-size: 14px;
     font-weight: normal;
-    padding: 24px;
+    padding: 24px 18px 24px 20px;
     background: url('../img/thick.png') left center no-repeat;
 }
 
@@ -661,7 +703,7 @@ address {
 
 .alphabet {
     background: url('../img/thick-divide.png') left center no-repeat;
-    padding-left: 21px;
+    padding-left: 25px;
 }
 
 .select-pannel {

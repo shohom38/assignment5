@@ -34,7 +34,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 755px;
+    width: 751px;
     height: 664px;
     margin: 0 auto;
     background-color: #e9e8e8;
@@ -148,12 +148,16 @@
     vertical-align: middle;
 }
 
-.alphabet-btn {
+.alphabet-btn-e, .alphabet-btn-k, .alphabet-btn-etc{
     padding-right: 1px;
     background: none;
     border: none;
     cursor: pointer;
     color: #4a4949;
+}
+
+.alphabet-btn-e {
+    margin-bottom: 4px;
 }
 
 .korean {
@@ -164,7 +168,7 @@
 
 .other {
     position: absolute;
-    top: 18px;
+    top: 22px;
     right: 3px;
 
 }
@@ -203,7 +207,7 @@ input[id="journalbtn"]:checked + div {
     visibility: visible;
 }
 
-.hover-popup {
+.hover-popup-bg {
     display: none;
     list-style: none;
     position: absolute;
@@ -217,6 +221,12 @@ input[id="journalbtn"]:checked + div {
     background: url('../img/dropmenu/dropmenu-cb.png') 0 0 no-repeat;
 }
 
+.hover-popup {
+    list-style: none;
+    margin: 0 7px;
+    background: url('../img/dropmenu/dm-sub-div.png') 0 bottom repeat-x;
+}
+
 .hover-popup-list>a {
     display: block;
     color: #6a983c;
@@ -226,13 +236,13 @@ input[id="journalbtn"]:checked + div {
 }
 
 .hover-popup-list>a:hover {
-    background-color: #7eb140;
-    color: white;
+    background: url('../img/dropmenu/db-hvr-bg.png') 0 center repeat-x;
 }
 
-.nav-list:hover .hover-popup {
+.nav-list:hover .hover-popup-bg {
     display: block;
 }
+
 
 .nav-list:hover .nav-hover-a {
     background: url('../img/dropmenu/hover-dropmenu.png') center center no-repeat;
@@ -252,6 +262,8 @@ input[id="journalbtn"]:checked + div {
 
 .hover-popup:hover {
     display: block;
+    margin: 0;
+    padding-bottom: 9px;
 }
 
 .nav-list:hover .arrow {
@@ -260,6 +272,10 @@ input[id="journalbtn"]:checked + div {
 
 .hover-popup-list a{
     text-decoration: none;
+}
+
+.hover-popup-list:first-child {
+    background: url('../img/dropmenu/dm-sub-div.png') 0 top repeat-x;
 }
 
 .nav-list {
@@ -274,11 +290,19 @@ input[id="journalbtn"]:checked + div {
     font-weight: bold;
 }
 
+
+.nav-dif-padding1 {
+    text-align: left;
+}
+
+#chkbox1, #chkbox2, #chkbox3 {
+    margin-top: -3px;
+}
+
 .keyword-btn-left {
     border: none;
     background: url('../img/popup2/keyword-left.png') left center no-repeat;
     padding: 6px 5px 6px 3px;
-    cursor: pointer;
     outline: none;
 }
 
@@ -298,7 +322,7 @@ input[id="journalbtn"]:checked + div {
 
 .keyword-btn-middle-first {
     background: url('../img/popup2/keyword-middle.png') center center repeat-x;
-    padding: 6px 14px;
+    padding: 6px 23px 6px 7px;
 }
 
 .circle-arrow {
