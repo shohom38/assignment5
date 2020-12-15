@@ -718,10 +718,16 @@ address {
 
 #searching {
     min-width: 362px;
-    padding: 7px 20px;
     font-size: 12px;
     position: absolute;
+    top: 10px;
     left: 216px;
+}
+
+#searching>input {
+    padding: 7px 20px;
+    width: 100%;
+    height: 100%;
 }
 
 .english a {
