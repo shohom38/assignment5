@@ -643,19 +643,9 @@ address {
 }
 
 .header {
-    background: url('../img/popup1-head-left.png') left center no-repeat;
-    padding-left: 30px;
     margin-bottom: 10px;
 }
 
-.header-section-right {
-    background: url('../img/popup1-head-right.png') right center no-repeat;
-    padding-right: 30px;
-}
-
-.header-section-middle {
-    background: url('../img/popup1-head-middle.png') center center repeat-x;
-}
 
 #title-head {
     padding: 14px 0 17px 60px;
@@ -690,7 +680,7 @@ address {
 }
 
 .select-pannel-box {
-    background: url('../img/under-bar.png') center top repeat-x;
+    background: url('../img/keyword/dot-btm.png') left top repeat-x;
 }
 
 .select-right {
@@ -708,7 +698,7 @@ address {
 }
 
 .search-pannel-box {
-    background: url('../img/under-bar.png') center bottom repeat-x;
+    background: url('../img/keyword/dot-btm.png') left bottom repeat-x;
 }
 
 .search-right {
