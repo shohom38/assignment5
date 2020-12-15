@@ -156,6 +156,10 @@ header {
     list-style: none;
 }
 
+#short-arw {
+    padding-right: 9px;
+}
+
 .route-flow-middle li {
     padding: 4px 8px;
     font-size: 12px;
@@ -324,14 +328,13 @@ header {
 
 .btn-section {
     position: relative;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
 }
 
 .plus-btn {
     background: url('../img/plus-area-left.png') left center no-repeat;
     padding: 7px 0 7px 21px;
     cursor: pointer;
-    margin-right: -5px;
 }
 
 .search-btn {
@@ -343,6 +346,7 @@ header {
 .delete-btn {
     background: url('../img/delete-area-left.png') left center no-repeat;
     padding: 7px 0 7px 24px;
+    cursor: pointer;
 }
 
 .btn-right {
@@ -380,7 +384,7 @@ header {
 }
 
 .btn-display:not(:first-child) {
-    margin-left: 7px;
+    margin-left: 4px;
 }
 
 .btn {
@@ -533,7 +537,7 @@ thead th{
 }
 
 .num-middle {
-    padding: 5px 0;
+    padding: 5px 1px;
     background: url('../img/num-middle.png') center center repeat-x;
 }
 
@@ -548,7 +552,7 @@ thead th{
 }
 
 .clicked-num-middle {
-    padding: 5px 0.3px;
+    padding: 5px 1px;
     background: url('../img/clicked-num-btn-middle.png') center center repeat-x;
 }
 
