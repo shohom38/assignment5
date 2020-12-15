@@ -96,7 +96,7 @@
 
 .search-pannel-box {
     padding-bottom: 12px;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
     position: relative;
 }
 
@@ -128,7 +128,7 @@
 }
 
 .chart-num-section {
-    padding-bottom: 7px;
+    margin-bottom: 6px;
     text-align: right;
     font-size: 12px;
 }
