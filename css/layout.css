@@ -299,38 +299,27 @@ input[id="journalbtn"]:checked + div {
     margin-top: -3px;
 }
 
-.keyword-btn-left {
-    border: none;
-    background: url('../img/popup2/keyword-left.png') left center no-repeat;
-    padding: 6px 5px 6px 3px;
-    outline: none;
-}
-
 .keyword-search-container:not(:last-child) {
     margin-bottom: 10px;
 }
 
-.keyword-btn-right {
-    background: url('../img/popup2/keyword-right.png') right center no-repeat;
-    padding: 6px 5px 6px 0;
+.kw-label {
+    float: left;
 }
 
-.keyword-btn-middle {
-    background: url('../img/popup2/keyword-middle.png') center center repeat-x;
-    padding: 6px 7px;
-}
-
-.keyword-btn-middle-first {
-    background: url('../img/popup2/keyword-middle.png') center center repeat-x;
-    padding: 6px 23px 6px 7px;
-}
-
-.circle-arrow {
-    background: url('../img/popup2/circlearrow.png') left center no-repeat;
-    padding: 5px 23px;
+.keyword-search-container::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .keyword-search {
     height: 28px;
-    width: 63%;
+    width: 68%;
+    float: right;
+}
+
+.keyword-banner {
+    height: 48px;
+    margin-bottom: 10px;
 }

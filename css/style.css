@@ -648,28 +648,13 @@ address {
     margin-bottom: 10px;
 }
 
-.header2 {
-    background: url('../img/popup2/popup2-head-left.png') left center no-repeat;
-    padding-left: 22px;
-    margin-bottom: 10px;
-}
-
 .header-section-right {
     background: url('../img/popup1-head-right.png') right center no-repeat;
     padding-right: 30px;
 }
 
-.header-section-right2 {
-    background: url('../img/popup2/popup2-head-right.png') right center no-repeat;
-    padding-right: 22px;
-}
-
 .header-section-middle {
     background: url('../img/popup1-head-middle.png') center center repeat-x;
-}
-
-.header-section-middle2 {
-    background: url('../img/popup2/popup2-head-middle.png') center center repeat-x;
 }
 
 #title-head {
@@ -678,13 +663,6 @@ address {
     color: #583710;
     background: url('../img/head-icon.png') left center no-repeat;
     
-}
-
-#title-head2 {
-    padding: 14px 0 14px 60px;
-    font-size: 18px;
-    color: #1b416f;
-    background: url('../img/popup2/write-icon.png') left center no-repeat;
 }
 
 #h3-select {
