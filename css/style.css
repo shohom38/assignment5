@@ -285,6 +285,7 @@ header {
 #dif-side-padding3 {
     padding-top: 6px;
     padding-bottom: 11px;
+    background-position-y: 8px;
 }
 
 #dif-side-padding4 {
@@ -317,7 +318,7 @@ header {
 
 .first-title {
     padding: 3px 0 10px 6px;
-    margin-bottom: 11px;
+    margin-bottom: 20px;
     background: url('../img/green-bar.png') 0 bottom repeat-x;
 }
 
@@ -357,6 +358,11 @@ header {
 .btn-right-plus {
     background: url('../img/area-right.png') right center no-repeat;
     padding: 7px 5px 7px 0;
+}
+
+.btn-middle-plus {
+    background: url('../img/area-middle.png') center center repeat-x;
+    padding: 7px 6px 7px 3px;
 }
 
 .btn-middle {
@@ -401,8 +407,8 @@ header {
 
 .select-section {
     position: absolute;
-    bottom: 12px;
-    right: 10px;
+    bottom: 6px;
+    right: 0;
     font-size: 12px;
 }
 
@@ -413,7 +419,7 @@ header {
     font-size: 12px;
 }
 
-.select-section strong {
+.select-section strong, .select-section2 strong{
     color: #1779b1;
 }
 
@@ -572,9 +578,11 @@ thead th{
 
 #Info {
     font-size: 14px;
-    background: url('../img/light-icon.png') 6px center no-repeat;
-    padding: 6px 37px;
-    margin-bottom: 10px;
+    background: url('../img/light-icon.png') 3px center no-repeat;
+    padding: 10px 37px 6px 37px;
+    margin-bottom: 6px;
+    position: relative;
+    font-weight: normal;
 }
 
 #Info>img {
@@ -582,7 +590,7 @@ thead th{
 }
 
 .table2 {
-    margin-bottom: 9px;
+    margin-bottom: 13px;
 }
 
 .btn-section-right-align {
