@@ -279,20 +279,13 @@ input[id="journalbtn"]:checked + div {
 }
 
 .nav-list {
-    display: inline-block;
     position: relative;
-    text-align: center;
 }
 
 .nav-hover-a:hover {
     background: url('../img/header/ml-hover.png') center center no-repeat;
     color: #578e12;
     font-weight: bold;
-}
-
-
-.nav-dif-padding1 {
-    text-align: left;
 }
 
 #chkbox1, #chkbox2, #chkbox3 {

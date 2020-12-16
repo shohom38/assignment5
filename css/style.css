@@ -63,59 +63,15 @@ header {
     right: 13px;
     cursor: pointer;
     width: 660px;
+    height: 43px;
 }
 
-.nav-bg-left {
-    background: url('../img/header/nav-left.png') left center no-repeat;
-    padding-left: 4px;
+.nav-bg {
+    background: url('../img/header/header_bg.png') center center no-repeat;
 }
 
-.nav-bg-right {
-    background: url('../img/header/nav-right.png') right center no-repeat;
-    padding-right: 12px;
-}
-
-.nav-bg-middle {
-    background: url('../img/header/nav-middle.png') 0 center repeat-x;
-}
-
-.nav-bg-middle>ul>li {
-    display: inline-block;
+.nav-bg>ul>li {
     list-style: none;
-}
-
-.nav-a {
-    margin-right: -4px;
-    display: inline-block;
-    width: 133px;
-    white-space: nowrap;
-    position: relative;
-    padding: 14px 27px 14px 29px;
-    vertical-align: middle;
-    line-height: 14px;
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #ffffff;
-    background: url('../img/header/divider.png') right center no-repeat;
-}
-
-
-.nav-pd-1 {
-    padding: 14px 41px 14px 45px;
-}
-
-.nav-pd-3 {
-    padding: 14px 30px 14px 27px;
-}
-
-.nav-pd-4 {
-    padding: 14px 19px 14px 21px;
-}
-
-.nav-c {
-    background: none;
-    padding-left: 2px;
 }
 
 .arrow {
@@ -138,12 +94,6 @@ header {
 .bg-deep:hover .nav-bg-left {
     background: url('../img/header/hover-left.png') left center no-repeat;
     padding-left: 4px;
-}
-
-.nav-b {
-    visibility: hidden;
-    width: 108px;
-    cursor: unset;
 }
 
 .header-sub-block {
@@ -440,6 +390,14 @@ table {
     font-size: 12px;
     box-shadow: 1px 1px #ffffff;
     background-color: #f7f7f3;
+}
+
+.table-fs {
+    font-size: 12px;
+}
+
+.table-fs>thead {
+    font-size: 13px;
 }
 
 thead {
