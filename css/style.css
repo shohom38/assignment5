@@ -128,7 +128,7 @@ header {
     background: url('../img/header/divider.png') right center no-repeat;
     padding-left: 36px;
     height: 43px;
-    width: 127px;
+    width: 124px;
 }
 
 .bg-deep:hover {
@@ -334,19 +334,19 @@ header {
 
 .plus-btn {
     background: url('../img/plus-area-left.png') left center no-repeat;
-    padding: 7px 0 7px 21px;
+    padding: 8px 0 8px 21px;
     cursor: pointer;
 }
 
 .search-btn {
     background: url('../img/search-area-left.png') left center no-repeat;
-    padding: 7px 0 7px 23px;
+    padding: 8px 0 8px 23px;
     cursor: pointer;
 }
 
 .delete-btn {
     background: url('../img/delete-area-left.png') left center no-repeat;
-    padding: 7px 0 7px 24px;
+    padding: 8px 0 8px 24px;
     cursor: pointer;
 }
 
