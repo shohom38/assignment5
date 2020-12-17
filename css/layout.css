@@ -208,17 +208,20 @@ input[id="journalbtn"]:checked + div {
 }
 
 .nav-list {
+    float: left;
     width: 132px;
     height: 43px;
     position: relative;
 }
 
+.nav-list:hover {
+    background: url('../img/dropmenu/dropmenu-top.png') center center no-repeat;
+}
+
 .nav-list>a {
     display: block;
-    float: left;
     position: relative;
     padding-left: 33px;
-    padding-right: 37px;
     background: url('../img/header/divider.png') right center no-repeat;
 }
 
@@ -230,7 +233,6 @@ input[id="journalbtn"]:checked + div {
 
 .nl-last>a {
     padding-left: 24px;
-    padding-right: 28px;
 }
 
 .invis-nav {
@@ -242,15 +244,22 @@ input[id="journalbtn"]:checked + div {
     line-height: 43px;
 }
 
+#navbar-guide::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .hover-popup-bg {
     display: none;
     list-style: none;
     position: absolute;
     top: 38px;
-    left: 5px;
+    left: 4px;
     min-width: 140px;
     padding-top: 12px;
     padding-bottom: 18px;
+    line-height: 12px;
     text-align: left;
     z-index: 1;
     background: url('../img/dropmenu/dropmenu-cb.png') 0 0 no-repeat;
@@ -270,7 +279,7 @@ input[id="journalbtn"]:checked + div {
     font-size: 12px;
 }
 
-.hover-popup-list>a:hover {
+.hover-popup-list:hover {
     background: url('../img/dropmenu/db-hvr-bg.png') 0 center repeat-x;
 }
 
@@ -295,12 +304,6 @@ input[id="journalbtn"]:checked + div {
     display: inline-block;
 }
 
-.hover-popup:hover {
-    display: block;
-    margin: 0;
-    padding-bottom: 9px;
-}
-
 .nav-list:hover .arrow {
     transform: rotate(180deg);
 }
@@ -317,10 +320,6 @@ input[id="journalbtn"]:checked + div {
     background: url('../img/header/ml-hover.png') center center no-repeat;
     color: #578e12;
     font-weight: bold;
-}
-
-#chkbox1, #chkbox2, #chkbox3 {
-    margin-top: -3px;
 }
 
 .keyword-search-container:not(:last-child) {
