@@ -231,6 +231,10 @@ input[id="journalbtn"]:checked + div {
     padding-right: 41px;
 }
 
+.nl-first:hover {
+    background: url('../img/header/hover-home.png') center center no-repeat;
+}
+
 .nl-last>a {
     padding-left: 24px;
 }

@@ -55,7 +55,7 @@ body {
 #nav-wrap {
     position: absolute;
     top: 14px;
-    right: 13px;
+    right: 18px;
     cursor: pointer;
     width: 660px;
 }
@@ -190,6 +190,7 @@ body {
 
 .middle-category {
     background: url('../img/category-middle.png') center center repeat-y;
+    padding-bottom: 10px;
 }
 
 .middle-category ul {
@@ -359,7 +360,7 @@ body {
 
 .select-section2 {
     position: absolute;
-    bottom: 10px;
+    bottom: 13px;
     right: 10px;
     font-size: 12px;
 }
@@ -446,8 +447,8 @@ thead th{
 .paging {
     text-align: center;
     font-size: 11px;
-    padding-bottom: 23px;
-    margin-bottom: 16px;
+    padding-bottom: 25px;
+    margin-bottom: 14px;
     background: url('../img/divide-section.png') center bottom repeat-x;
 }
 
