@@ -16,15 +16,10 @@ body {
     padding: 0 40px;
 }
 
-header {
-    width: 940px;
-    margin: 0 auto;
-}
-
 #header-wrap {
     display: block;
     position: relative;
-    width: 940px;
+    width: 945px;
     margin: 0 auto;
     height: 72px;
     background: url('../img/header-bg-left.png') left top no-repeat;
@@ -63,11 +58,11 @@ header {
     right: 13px;
     cursor: pointer;
     width: 660px;
-    height: 43px;
 }
 
 .nav-bg {
     background: url('../img/header/header_bg.png') center center no-repeat;
+    height: 43px;
 }
 
 .nav-bg>ul>li {
@@ -97,7 +92,7 @@ header {
 }
 
 .header-sub-block {
-    width: 930px;
+    width: 932px;
     margin: 0 auto;
 }
 
@@ -267,7 +262,7 @@ header {
 }
 
 .first-title {
-    padding: 3px 0 10px 6px;
+    padding: 3px 0 11px 6px;
     margin-bottom: 20px;
     background: url('../img/green-bar.png') 0 bottom repeat-x;
 }
@@ -410,6 +405,7 @@ tr:nth-child(even) {
 
 thead th{
     padding: 8.5px 0;
+    border-top: 1px solid #999999;
     border-bottom: 1px solid #999999;
     border-right: 1px solid #999999;
     height: 31px;
@@ -417,17 +413,22 @@ thead th{
 }
 
 .td-size {
-    height: 31px;
-    padding: 11px 11px;
-    border-top: 1px solid #d9d9d9;
-    border-right: 1px solid #d9d9d9;
-    line-height: 10px;
-    vertical-align: middle;
-    color: #636161;
+    min-height: 30px;
+    line-height: 30px;
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
 }
 
 .td-text-align {
     text-align: left;
+}
+
+.tb>tr {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.tb>tr>td:not(:last-child) {
+    border-right: 1px solid #d9d9d9;
 }
 
 .no-use-right-border {
@@ -467,7 +468,7 @@ thead th{
 
 .prev-btn-left {
     background: url('../img/left-prev.png') left center no-repeat;
-    padding: 5px 0 5px 16px;
+    padding: 6px 0 6px 16px;
 }
 
 .prev-btn-right {
@@ -482,7 +483,7 @@ thead th{
 
 .next-btn-left {
     background: url('../img/left-next.png') left center no-repeat;
-    padding: 5px 0 5px 6px;
+    padding: 6px 0 6px 6px;
 }
 
 .next-btn-right {
@@ -491,7 +492,7 @@ thead th{
 }
 
 .num-left {
-    padding: 5px 0 5px 7px;
+    padding: 6px 0 6px 7px;
     background: url('../img/num-left.png') left center no-repeat;
 }
 
@@ -506,7 +507,7 @@ thead th{
 }
 
 .clicked-num-left {
-    padding: 5px 0 5px 7px;
+    padding: 6px 0 6px 7px;
     background: url('../img/clicked-num-btn-left.png') left center no-repeat;
 }
 
