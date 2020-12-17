@@ -214,7 +214,7 @@ input[id="journalbtn"]:checked + div {
     position: relative;
 }
 
-.nav-list:hover {
+.hv-nl:hover {
     background: url('../img/dropmenu/dropmenu-top.png') center center no-repeat;
 }
 
