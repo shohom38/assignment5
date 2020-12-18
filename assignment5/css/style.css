@@ -70,9 +70,8 @@ body {
 }
 
 .arrow {
-    position: relative;
-    left: 9px;
-    top: 0;
+    transition: 0.3s;
+    transform-origin: center center;
 }
 
 .bg-deep {
@@ -259,7 +258,7 @@ body {
 
 .contents-box {
     padding-top: 2px;
-    padding-left: 190px;
+    padding-left: 192px;
 }
 
 .first-title {
@@ -290,9 +289,22 @@ body {
     cursor: pointer;
 }
 
+.btn-display {
+    display: inline-block;
+}
+
+.btn-display:not(:first-child) {
+    margin-left: 1px;
+}
+
+.btn-position {
+    margin-left: 3px;
+}
+
 .delete-btn {
     background: url('../img/delete-area-left.png') left center no-repeat;
     padding: 8px 0 8px 24px;
+    margin-left: 2px;
     cursor: pointer;
 }
 
@@ -313,7 +325,7 @@ body {
 
 .btn-middle {
     background: url('../img/area-middle.png') center center repeat-x;
-    padding: 7px 6px;
+    padding: 7px 11px 7px 6px;
 }
 
 .x-btn-middle {
@@ -331,14 +343,6 @@ body {
 
 .sidebar-wrap>ul {
     list-style: none;
-}
-
-.btn-display {
-    display: inline-block;
-}
-
-.btn-display:not(:first-child) {
-    margin-left: 4px;
 }
 
 .btn {

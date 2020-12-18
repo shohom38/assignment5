@@ -6,8 +6,13 @@
 }
 
 .arrow {
-    transition: 0.3s;
-    transform-origin: center center;
+    position: relative;
+    left: 57px;
+    top: 0;
+}
+
+.arrow-ml {
+    left: 76px;
 }
 
 .opacity-bg {
@@ -240,6 +245,7 @@ input[id="journalbtn"]:checked + div {
 
 .nl-last>a {
     padding:  0 24px 0 24px;
+    background: none;
 }
 
 .invis-nav {
@@ -356,11 +362,18 @@ input[id="journalbtn"]:checked + div {
 
 .nav-info {
     position: absolute;
-    top: 14px;
-    left: 22px;
+    top: 15px;
+    left: 29px;
 }
 
+.ni-last {
+    left: 20px;
+}
 
 .nav-list:hover .nav-hv-info {
     display: inline-block;
+}
+
+.btn-lefmg {
+    margin-left: 1px;
 }
