@@ -70,9 +70,8 @@ body {
 }
 
 .arrow {
-    position: relative;
-    left: 9px;
-    top: 0;
+    transition: 0.3s;
+    transform-origin: center center;
 }
 
 .bg-deep {
@@ -167,7 +166,7 @@ body {
 
 .aside-container {
     width: 940px;
-    padding: 23px 25px 0 22px;
+    padding: 23px 22px 0 22px;
     position: relative;
     margin: 0 auto 19px auto;
     border: 1px solid #cfcebe;
@@ -259,11 +258,11 @@ body {
 
 .contents-box {
     padding-top: 2px;
-    padding-left: 190px;
+    padding-left: 191px;
 }
 
 .first-title {
-    padding: 3px 0 11px 6px;
+    padding: 2px 0 12px 6px;
     margin-bottom: 20px;
     background: url('../img/green-bar.png') 0 bottom repeat-x;
 }
@@ -290,9 +289,23 @@ body {
     cursor: pointer;
 }
 
+.btn-display {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.btn-display:not(:first-child) {
+    margin-left: 1px;
+}
+
+.btn-position {
+    margin-left: 3px;
+}
+
 .delete-btn {
     background: url('../img/delete-area-left.png') left center no-repeat;
     padding: 8px 0 8px 24px;
+    margin-left: 2px;
     cursor: pointer;
 }
 
@@ -313,7 +326,7 @@ body {
 
 .btn-middle {
     background: url('../img/area-middle.png') center center repeat-x;
-    padding: 7px 6px;
+    padding: 7px 11px 7px 6px;
 }
 
 .x-btn-middle {
@@ -326,19 +339,11 @@ body {
     margin: 0 auto;
     position: absolute;
     top: 24px;
-    left: 22px;
+    left: 21px;
 }
 
 .sidebar-wrap>ul {
     list-style: none;
-}
-
-.btn-display {
-    display: inline-block;
-}
-
-.btn-display:not(:first-child) {
-    margin-left: 4px;
 }
 
 .btn {
@@ -412,10 +417,12 @@ thead th{
     border-bottom: 1px solid #999999;
     border-right: 1px solid #999999;
     height: 31px;
+    font-size: 13px;
     color: #585953;
 }
 
 .td-size {
+    font-size: 12px;
     min-height: 30px;
     line-height: 30px;
     border-top: 1px solid #ffffff;
@@ -424,9 +431,14 @@ thead th{
 
 .td-text-align {
     text-align: left;
+    padding-left: 10px;
 }
 
-.tb>tr {
+.tb {
+    border-bottom: 1px solid #999999;
+}
+
+.tb>tr:not(:last-child) {
     border-bottom: 1px solid #d9d9d9;
 }
 
@@ -603,16 +615,18 @@ address {
     margin-bottom: 5px;
 }
 
+address>img {
+    margin-bottom: 8px;
+}
 
-.popup-contents-box>p {
+.keyword-p-wrap>p {
     background: url('../img/green-bullet.png') left center no-repeat;
     padding-left: 23px;
-    margin-bottom: 14px;
+    margin-bottom: 17px;
     font-size: 12px;
     word-spacing: 2px;
     white-space: nowrap;
     vertical-align: middle;
-    line-height: 13.5px;
     color: #40403e;
 }
 
@@ -653,10 +667,6 @@ address {
     padding-left: 21px;
 }
 
-.select-pannel-box {
-    background: url('../img/keyword/dot-btm.png') left top repeat-x;
-}
-
 .select-right {
     background: url('../img/select-right.png') right center no-repeat;
     padding-right: 16px;
@@ -694,8 +704,8 @@ address {
     min-width: 362px;
     font-size: 12px;
     position: absolute;
-    top: 10px;
-    left: 216px;
+    top: 8px;
+    left: 218px;
 }
 
 #searching>input {
@@ -751,10 +761,34 @@ address {
     cursor: pointer;
 }
 
+.kw-last-btn {
+    background: url('../img/keyword/kw-last-btn.png') left center no-repeat;
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 4px;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0 8.5px;
+}
+
+.kw-last-btn-right {
+    background: url('../img/keyword/kw-last-btn-r.png') right center no-repeat;
+    padding: 0 4px 0 0;
+}
+
+.kw-last-btn-mid {
+    background: url('../img/keyword/kw-last-btn-m.png') center center repeat-x;
+    padding: 7px 22px;
+}
+
 .letter-spacing-date {
     letter-spacing: 8px;
 }
 
 .copyright {
     padding-left: 2px;
+}
+
+label {
+    cursor: pointer;
 }

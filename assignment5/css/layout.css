@@ -6,8 +6,13 @@
 }
 
 .arrow {
-    transition: 0.3s;
-    transform-origin: center center;
+    position: relative;
+    left: 57px;
+    top: 0;
+}
+
+.arrow-ml {
+    left: 76px;
 }
 
 .opacity-bg {
@@ -35,7 +40,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 751px;
-    height: 664px;
+    height: 663px;
     margin: 0 auto;
     background-color: #e9e8e8;
     border: 6px solid #ffffff;
@@ -76,26 +81,29 @@
     background-size: 48px auto;
     cursor: pointer;
 }
+.wrap-popup {
+    padding: 31px 19px 13px 19px;
+}
 
 .wrap-popup2 {
-    padding: 31px 19px 14px 19px;
+    padding: 31px 19px 16px 19px;
 }
 
 .popup-contents-box {
     border: 1px solid #928f8f;
     border-radius: 4px;
-    padding: 17px 31px;
+    padding: 20px 22px 6px 13px;
     margin-bottom: 15px;
     background-color: #ffffff;
 }
 
 .select-pannel-box {
     padding-top: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 13px;
 }
 
 .search-pannel-box {
-    padding-bottom: 12px;
+    padding-bottom: 15px;
     margin-bottom: 15px;
     position: relative;
 }
@@ -125,6 +133,24 @@
 
 .chart-section {
     position: relative;
+    margin-bottom: 13px;
+    padding-left: 2px;
+}
+
+.chart-section>table>thead th {
+    height: 29px;
+}
+
+.chart-section>table>tbody {
+    border-bottom: 1px solid #999999;
+}
+
+.chart-section>table>tbody>tr:not(:last-child) {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.chart-section>table>tbody>tr>td:not(:last-child) {
+    border-right: 1px solid #d9d9d9;
 }
 
 .chart-num-section {
@@ -138,12 +164,10 @@
     font-weight: bold;
 }
 
-.chart-section {
-    margin-bottom: 13px;
-}
-
 .alphabet {
     display: inline-block;
+    width: 400px;
+    height: 63px;
     position: relative;
     vertical-align: middle;
 }
@@ -161,15 +185,16 @@
 }
 
 .korean {
-    display: inline-block;
-    padding-left: 1px;
+    padding-left: 3px;
     padding-right: 19px;
+    position: absolute;
+    bottom: 13px;
 }
 
 .other {
     position: absolute;
-    top: 22px;
-    right: 3px;
+    bottom: 13px;
+    right: 11px;
 
 }
 
@@ -240,6 +265,7 @@ input[id="journalbtn"]:checked + div {
 
 .nl-last>a {
     padding:  0 24px 0 24px;
+    background: none;
 }
 
 .invis-nav {
@@ -330,7 +356,7 @@ input[id="journalbtn"]:checked + div {
 }
 
 .keyword-search-container:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 
 .kw-label {
@@ -343,10 +369,17 @@ input[id="journalbtn"]:checked + div {
     clear: both;
 }
 
-.keyword-search {
-    height: 28px;
-    width: 68%;
+.input-wrap {
     float: right;
+    height: 26px;
+    width: 335px;
+}
+
+.keyword-search {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    background-color: transparent;
 }
 
 .keyword-banner {
@@ -356,11 +389,94 @@ input[id="journalbtn"]:checked + div {
 
 .nav-info {
     position: absolute;
-    top: 14px;
-    left: 22px;
+    top: 15px;
+    left: 29px;
 }
 
+.ni-last {
+    left: 20px;
+}
 
 .nav-list:hover .nav-hv-info {
     display: inline-block;
+    position: absolute;
+    top: 15px;
+    left: 29px;
+}
+
+.btn-lefmg {
+    margin-left: 1px;
+}
+
+.top-tb {
+    background: url('../img/text-bar/top-tb.png') 0 top repeat-x;
+}
+
+.bt-tb {
+    background: url('../img/text-bar/bt-tb.png') 0 bottom repeat-x;
+}
+
+.top-l-tb {
+    background: url('../img/text-bar/t-l-tb.png') left top no-repeat;
+}
+
+.top-r-tb {
+    background: url('../img/text-bar/t-r-tb.png') right top no-repeat;
+    padding-top: 4px;
+}
+
+.bt-l-tb {
+    background: url('../img/text-bar/bt-l-tb.png') left bottom no-repeat;
+}
+
+.bt-r-tb {
+    background: url('../img/text-bar/bt-r-tb.png') right bottom no-repeat;
+    padding-bottom: 4px;
+}
+
+.left-tb {
+    background: url('../img/text-bar/left-tb.png') left 0 repeat-y;
+    padding-left: 4px;
+}
+
+.right-tb {
+    background: url('../img/text-bar/right-tb.png') right 0 repeat-y;
+    padding-right: 4px;
+    padding-bottom: 2px;
+}
+
+.tb-wrap {
+    background-image: linear-gradient(#faf3f3, #ffffff);
+}
+
+.kw-btn-display {
+    display: inline-block;
+}
+
+.jl-header {
+    margin-bottom: 9px;
+}
+
+.jl-pcb {
+    padding: 15px 24px 14px 24px;
+}
+
+.jl-p-wrap>p {
+    padding-left: 21px;
+    margin-bottom: 0;
+}
+
+.jl-p-wrap {
+    background: url('../img/keyword/dot-btm.png') center bottom repeat-x;
+    padding-bottom: 15px;
+}
+
+.popup-cb-inner {
+    padding: 0 7px 0 3px;
+}
+
+.english {
+    position: absolute;
+    top: 11px;
+    padding-left: 2px;
 }
