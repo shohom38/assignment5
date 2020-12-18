@@ -325,6 +325,8 @@ body {
     width: 166px;
     margin: 0 auto;
     position: absolute;
+    top: 24px;
+    left: 22px;
 }
 
 .sidebar-wrap>ul {
@@ -447,8 +449,8 @@ thead th{
 .paging {
     text-align: center;
     font-size: 11px;
-    padding-bottom: 23px;
-    margin-bottom: 11px;
+    padding-bottom: 20px;
+    margin-bottom: 14px;
     background: url('../img/divide-section.png') center bottom repeat-x;
 }
 
