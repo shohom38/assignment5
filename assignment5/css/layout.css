@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.arrow {
+    transition: 0.3s;
+    transform-origin: center center;
+}
+
+.opacity-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.real-wrap + label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: 1;
+}
+
+.real-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 751px;
+    height: 664px;
+    margin: 0 auto;
+    background-color: #e9e8e8;
+    border: 6px solid #ffffff;
+    z-index: 2;
+}
+
+.real-wrap2 + label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: 1;
+}
+
+.real-wrap2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 570px;
+    margin: 0 auto;
+    background-color: #e9e8e8;
+    border: 6px solid #ffffff;
+    z-index: 2;
+}
+
+.exit-btn>label {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    padding-top: 48px;
+    top: -23px;
+    right: -23px;
+    background: url('../img/x-mark.png') right top no-repeat;
+    background-size: 48px auto;
+    cursor: pointer;
+}
+
+.wrap-popup2 {
+    padding: 31px 19px 14px 19px;
+}
+
+.popup-contents-box {
+    border: 1px solid #928f8f;
+    border-radius: 4px;
+    padding: 17px 31px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+}
+
+.select-pannel-box {
+    padding-top: 12px;
+    margin-bottom: 12px;
+}
+
+.search-pannel-box {
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.search-contents-box {
+    display: inline-block;
+    padding-left: 19px;
+}
+
+.searching-btn {
+    padding: 16px 22px;
+    border:none;
+    vertical-align: middle;
+    cursor: pointer;
+    position: absolute;
+    right: 9px;
+    background: url('../img/search-red-icon.png') 0 0 no-repeat;
+}
+
+#h3-select {
+    display: inline-block;
+}
+
+#h3-search {
+    display: inline-block;
+}
+
+.chart-section {
+    position: relative;
+}
+
+.chart-num-section {
+    margin-bottom: 6px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.chart-num-section span {
+    color: #1779b1;
+    font-weight: bold;
+}
+
+.chart-section {
+    margin-bottom: 13px;
+}
+
+.alphabet {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.alphabet-btn-e, .alphabet-btn-k, .alphabet-btn-etc{
+    padding-right: 1px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4a4949;
+}
+
+.alphabet-btn-e {
+    margin-bottom: 4px;
+}
+
+.korean {
+    display: inline-block;
+    padding-left: 1px;
+    padding-right: 19px;
+}
+
+.other {
+    position: absolute;
+    top: 22px;
+    right: 3px;
+
+}
+
+.btn-text-align {
+    text-align: center;
+}
+
+input[id="popupbtn"] {
+    display: none;
+}
+
+input[id="popupbtn"] + div {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+}
+
+input[id="popupbtn"]:checked + div {
+    opacity: 1;
+    visibility: visible;
+}
+
+input[id="journalbtn"] {
+    display: none;
+}
+
+input[id="journalbtn"] + div {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+}
+
+input[id="journalbtn"]:checked + div {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-list {
+    width: 132px;
+    height: 43px;
+    float: left;
+    position: relative;
+}
+
+#navbar-guide::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.nav-list>a {
+    display: block;
+    position: relative;
+    padding: 0 33px 0 33px;
+    background: url('../img/header/divider.png') right center no-repeat;
+}
+
+.nl-first>a {
+    width: 127px;
+    padding-left: 46px;
+    padding-right: 41px;
+}
+
+.nl-first:hover {
+    background: url('../img/header/hover-home.png') left center no-repeat;
+}
+
+.nl-last>a {
+    padding:  0 24px 0 24px;
+}
+
+.invis-nav {
+    visibility: hidden;
+}
+
+#navbar-guide {
+    height: 43px;
+    line-height: 43px;
+}
+
+.hover-popup-bg {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 38px;
+    min-width: 140px;
+    line-height: 12px;
+    padding-top: 12px;
+    padding-bottom: 18px;
+    text-align: left;
+    z-index: 1;
+    background: url('../img/dropmenu/dropmenu-cb.png') 0 0 no-repeat;
+}
+
+.hover-popup {
+    list-style: none;
+    margin: 0 auto;
+    padding-bottom: 8px;
+    background: url('../img/dropmenu/dm-sub-div.png') 0 bottom repeat-x;
+}
+
+.hover-popup-list>a {
+    display: block;
+    color: #6a983c;
+    padding: 6px 7px;
+    background: url('../');
+}
+
+.hover-popup-list>a:hover {
+    background: url('../img/dropmenu/db-hvr-bg.png') 0 center repeat-x;
+}
+
+.hv-nl:hover {
+    background: url('../img/dropmenu/dropmenu-top.png') left center no-repeat;
+}
+
+.nav-list:hover .hover-popup-bg {
+    display: block;
+}
+
+.nav-list:hover .nav-list>a {
+    background: url('../img/dropmenu/hover-dropmenu.png') center center no-repeat;
+}
+
+.nav-hover-info {
+    display: none;
+}
+
+.nav-list:hover .nav-default-info {
+    display: none;
+}
+
+.nav-list:hover .nav-hover-info {
+    display: inline-block;
+}
+
+.nav-list:hover .arrow {
+    transform: rotate(180deg);
+}
+
+.hover-popup-list a{
+    text-decoration: none;
+}
+
+.hover-popup-list:first-child {
+    background: url('../img/dropmenu/dm-sub-div.png') 0 top repeat-x;
+}
+
+.nav-hover-a:hover {
+    background: url('../img/header/ml-hover.png') center center no-repeat;
+    color: #578e12;
+    font-weight: bold;
+}
+
+#chkbox1, #chkbox2, #chkbox3 {
+    margin-top: -3px;
+}
+
+.keyword-search-container:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.kw-label {
+    float: left;
+}
+
+.keyword-search-container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.keyword-search {
+    height: 28px;
+    width: 68%;
+    float: right;
+}
+
+.keyword-banner {
+    height: 48px;
+    margin-bottom: 10px;
+}
