@@ -21,39 +21,39 @@
                         <div id="nav-wrap">
                             <div class="nav-bg">
                                 <ul id="navbar-guide">
-                                    <l1 class="nav-list nl-first">
+                                    <li class="nav-list nl-first">
                                         <a href="#"><img src="../img/header/nav-home.png" alt="Home"></a>
-                                    </l1>
-                                    <l1 class="nav-list">
-                                        <a href="#"><img src="../img/header/nav-info.png" alt="정보검색"><img class="arrow" src="../img/arrow.png" alt="menuopenbtn"></a>
+                                    </li>
+                                    <li class="nav-list hv-nl">
+                                        <a href="#"><img class="nav-info" src="../img/header/nav-info.png" alt="정보검색"><img class="arrow" src="../img/arrow.png" alt="menuopenbtn"></a>
                                         <div class="hover-popup-bg">
                                             <ul class="hover-popup">
                                                 <li class="hover-popup-list"><a href="#"><img src="../img/dropmenu/search-asy.png" alt="논문검색"></a></li>
                                                 <li class="hover-popup-list"><a href="#"><img src="../img/dropmenu/search-book.png" alt="단행본검색"></a></li>
                                             </ul>
                                         </div>
-                                    </l1>
-                                    <l1 class="nav-list">
-                                        <a href="#"><img class="nav-default-info" src="../img/header/nav-info2.png" alt="전자정보"><img class="nav-hover-info" src="../img/dropmenu/info-hov.png" alt="전자정보(hover)"><img class="arrow" src="../img/arrow.png" alt="menuopenbtn"></a>
+                                    </li>
+                                    <li class="nav-list hv-nl">
+                                        <a href="#"><img class="nav-info nav-default-info" src="../img/header/nav-info2.png" alt="전자정보"><img class="nav-hv-info" src="../img/dropmenu/info-hov.png" alt="전자정보(hover)"><img class="arrow" src="../img/arrow.png" alt="menuopenbtn"></a>
                                         <div class="hover-popup-bg">
                                             <ul class="hover-popup">
                                                 <li class="hover-popup-list"><a href="#"><img src="../img/dropmenu/search-asy.png" alt="논문검색"></a></li>
                                                 <li class="hover-popup-list"><a href="#"><img src="../img/dropmenu/search-book.png" alt="단행본검색"></a></li>
                                             </ul>
                                         </div>
-                                    </l1>
-                                    <l1 class="nav-list nl-last">
-                                        <a href="#"><img src="../img/header/nav-ml.png" alt="MyLibrary"><img class="arrow" src="../img/arrow.png" alt="menuopenbtn"></a>
+                                    </li>
+                                    <li class="nav-list hv-nl nl-last">
+                                        <a href="#"><img class="nav-info ni-last" src="../img/header/nav-ml.png" alt="MyLibrary"><img class="arrow arrow-ml" src="../img/arrow.png" alt="menuopenbtn"></a>
                                         <div class="hover-popup-bg">
                                             <ul class="hover-popup">
                                                 <li class="hover-popup-list"><a href="#"><img src="../img/dropmenu/search-asy.png" alt="논문검색"></a></li>
                                                 <li class="hover-popup-list"><a href="#"><img src="../img/dropmenu/search-book.png" alt="단행본검색"></a></li>
                                             </ul>
                                         </div>
-                                    </l1>
-                                    <l1 class="invis-nav">
+                                    </li>
+                                    <li class="invis-nav">
                                         <a href="#">My Library</a>
-                                    </l1>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -103,21 +103,21 @@
                     <h3 id="h3-SDI"><img src="../img/h3-SDI.png" alt="맞춤정보(SDI)신청"></h3>
                 </div>
                 <div class="btn-section">
-                    <label for="popupbtn" class="btn plus-btn btn-display">
+                    <label for="popupbtn" class="btn plus-btn">
                         <span class="btn-right-plus">
                             <span class="btn-middle-plus">
                                 키워드등록
                             </span>
                         </span>
                     </label>
-                    <label for="journalbtn" class="btn search-btn btn-display">
+                    <label for="journalbtn" class="btn search-btn btn-lefmg">
                         <span class="btn-right">
                             <span class="btn-middle">
                                 저널검색
                             </span>
                         </span>
                     </label>
-                    <label href="#" class="btn btn-word-spacing delete-btn btn-display">
+                    <label href="#" class="btn btn-word-spacing delete-btn btn-position">
                         <span class="btn-right">
                             <span class="x-btn-middle">
                                 삭 제
@@ -136,7 +136,7 @@
                 <table class="table1 table-fs">
                     <caption>맞춤정보신청표</caption>
                     <colgroup>
-                        <col style="width: 6%; min-width: 100px;">
+                        <col style="width: 5.5%; min-width: 100px;">
                         <col style="width: 6%;">
                         <col style="width: 15.5%;">
                         <col style="width: 12.5%;">
@@ -276,9 +276,9 @@
                     <colgroup>
                         <col style="width: 5%;">
                         <col style="width: 6%;">
-                        <col style="width: 14%;">
-                        <col style="width: 12%;">
-                        <col style="width: 26%;">
+                        <col style="width: 14.5%;">
+                        <col style="width: 12.4%;">
+                        <col style="width: 24.8%;">
                         <col style="width: 9%;">
                         <col style="width: 10%;">
                         <col style="width: 11%;">
@@ -330,254 +330,259 @@
             </div>
         </div>
     </div>
+    <!--학술지목록-->
     <input id="journalbtn" class="popupbtn" type="checkbox">
     <div class="opacity-bg">
         <div class="real-wrap">
             <div class="exit-btn"><label for="journalbtn"></label></div>
             <div class="wrap-popup2">
-                <div class="header">
+                <div class="jl-header">
                     <img src="../img/keyword/list-banner.png" alt="학술지목록">
                 </div>
-                <div class="popup-contents-box">
-                    <p>관심분야의 키워드를 등록하면 해당하는 신착도서와 저널정보를 받아볼 수 있습니다.</p>
-                    <div class="select-pannel-box">
-                        <div class="select-pannel">
-                            <div class="select-right">
-                                <div class="select-middle">
-                                    <h3 id="h3-select">선택</h3>
-                                    <div class="alphabet">
-                                        <div class="english">
-                                            <button class="alphabet-btn-e">A</button>
-                                            <button class="alphabet-btn-e">B</button>
-                                            <button class="alphabet-btn-e">C</button>
-                                            <button class="alphabet-btn-e">D</button>
-                                            <button class="alphabet-btn-e">E</button>
-                                            <button class="alphabet-btn-e">F</button>
-                                            <button class="alphabet-btn-e">G</button>
-                                            <button class="alphabet-btn-e">H</button>
-                                            <button class="alphabet-btn-e">I</button>
-                                            <button class="alphabet-btn-e">J</button>
-                                            <button class="alphabet-btn-e">K</button>
-                                            <button class="alphabet-btn-e">L</button>
-                                            <button class="alphabet-btn-e">M</button>
-                                            <button class="alphabet-btn-e">N</button>
-                                            <button class="alphabet-btn-e">O</button>
-                                            <button class="alphabet-btn-e">P</button>
-                                            <button class="alphabet-btn-e">Q</button>
-                                            <button class="alphabet-btn-e">R</button>
-                                            <button class="alphabet-btn-e">S</button>
-                                            <button class="alphabet-btn-e">T</button>
-                                            <button class="alphabet-btn-e">U</button>
-                                            <button class="alphabet-btn-e">V</button>
-                                            <button class="alphabet-btn-e">W</button>
-                                            <button class="alphabet-btn-e">X</button>
-                                            <button class="alphabet-btn-e">Y</button>
-                                            <button class="alphabet-btn-e">Z</button>
-                                        </div>
-                                        <div class="korean">
-                                            <button class="alphabet-btn-k">가</button>
-                                            <button class="alphabet-btn-k">나</button>
-                                            <button class="alphabet-btn-k">다</button>
-                                            <button class="alphabet-btn-k">라</button>
-                                            <button class="alphabet-btn-k">마</button>
-                                            <button class="alphabet-btn-k">바</button>
-                                            <button class="alphabet-btn-k">사</button>
-                                            <button class="alphabet-btn-k">아</button>
-                                            <button class="alphabet-btn-k">자</button>
-                                            <button class="alphabet-btn-k">차</button>
-                                            <button class="alphabet-btn-k">카</button>
-                                            <button class="alphabet-btn-k">타</button>
-                                            <button class="alphabet-btn-k">파</button>
-                                            <button class="alphabet-btn-k">하</button>
-                                        </div>
-                                        <div class="other">
-                                            <button class="alphabet-btn-etc">[전체]</button>
-                                            <button class="alphabet-btn-etc">[기타]</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="jl-pcb popup-contents-box">
+                    <div class="jl-p-wrap keyword-p-wrap">
+                        <p>관심분야의 키워드를 등록하면 해당하는 신착도서와 저널정보를 받아볼 수 있습니다.</p>
                     </div>
-                    <div class="search-pannel-box">
-                        <div class="search-pannel">
-                            <div class="search-right">
-                                <div class="search-middle">
-                                    <h3 id="h3-search">검색어</h3>
-                                    <div class="search-contents-box">
-                                        <form action="#">
-                                            <select name="namesearch" id="name">
-                                                <option value="서명">서명</option>
-                                                <option value="홍길동">홍길동</option>
-                                            </select>
-                                            <div id="searching">
-                                                <input type="text" placeholder="Search...">
+                    <div class="popup-cb-inner">
+                        <div class="select-pannel-box">
+                            <div class="select-pannel">
+                                <div class="select-right">
+                                    <div class="select-middle">
+                                        <h3 id="h3-select">선택</h3>
+                                        <div class="alphabet">
+                                            <div class="english">
+                                                <button class="alphabet-btn-e">A</button>
+                                                <button class="alphabet-btn-e">B</button>
+                                                <button class="alphabet-btn-e">C</button>
+                                                <button class="alphabet-btn-e">D</button>
+                                                <button class="alphabet-btn-e">E</button>
+                                                <button class="alphabet-btn-e">F</button>
+                                                <button class="alphabet-btn-e">G</button>
+                                                <button class="alphabet-btn-e">H</button>
+                                                <button class="alphabet-btn-e">I</button>
+                                                <button class="alphabet-btn-e">J</button>
+                                                <button class="alphabet-btn-e">K</button>
+                                                <button class="alphabet-btn-e">L</button>
+                                                <button class="alphabet-btn-e">M</button>
+                                                <button class="alphabet-btn-e">N</button>
+                                                <button class="alphabet-btn-e">O</button>
+                                                <button class="alphabet-btn-e">P</button>
+                                                <button class="alphabet-btn-e">Q</button>
+                                                <button class="alphabet-btn-e">R</button>
+                                                <button class="alphabet-btn-e">S</button>
+                                                <button class="alphabet-btn-e">T</button>
+                                                <button class="alphabet-btn-e">U</button>
+                                                <button class="alphabet-btn-e">V</button>
+                                                <button class="alphabet-btn-e">W</button>
+                                                <button class="alphabet-btn-e">X</button>
+                                                <button class="alphabet-btn-e">Y</button>
+                                                <button class="alphabet-btn-e">Z</button>
                                             </div>
-                                            <button class="searching-btn"></button>
-                                        </form>
+                                            <div class="korean">
+                                                <button class="alphabet-btn-k">가</button>
+                                                <button class="alphabet-btn-k">나</button>
+                                                <button class="alphabet-btn-k">다</button>
+                                                <button class="alphabet-btn-k">라</button>
+                                                <button class="alphabet-btn-k">마</button>
+                                                <button class="alphabet-btn-k">바</button>
+                                                <button class="alphabet-btn-k">사</button>
+                                                <button class="alphabet-btn-k">아</button>
+                                                <button class="alphabet-btn-k">자</button>
+                                                <button class="alphabet-btn-k">차</button>
+                                                <button class="alphabet-btn-k">카</button>
+                                                <button class="alphabet-btn-k">타</button>
+                                                <button class="alphabet-btn-k">파</button>
+                                                <button class="alphabet-btn-k">하</button>
+                                            </div>
+                                            <div class="other">
+                                                <button class="alphabet-btn-etc">[전체]</button>
+                                                <button class="alphabet-btn-etc">[기타]</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="chart-num-section">
-                        총 <span><strong>2건</strong></span>
-                    </div>
-                    <div class="chart-section">
-                        <table>
-                            <caption>시민의식 국제비교 조사표</caption>
-                            <colgroup>
-                                <col style="width: 7%;">
-                                <col style="width: 7%;">
-                                <col style="width: 60%;">
-                                <col style="width: 26%;">
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th scope="col">선택</th>
-                                    <th scope="col">번호</th>
-                                    <th scope="col">신청정보</th>
-                                    <th scope="col" class="no-use-right-border">출판사</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><div class="td-size"><input type="checkbox" id="click-chk"></div></td>
-                                    <td><div class="td-size"><label for="click-chk">1</label></div</td>
-                                    <td><div class="td-size td-text-align"><label for="click-chk">2002 시민의식 국제비교 조사</label></div></td>
-                                    <td class="no-use-right-border"><div class="td-size"><label for="click-chk">공보처</label></div></td>
-                                </tr>
-                                <tr>
-                                    <td><div class="td-size"><input type="checkbox" id="click-chk2"></div></td>
-                                    <td><div class="td-size"><label for="click-chk2">1</label></div</td>
-                                    <td><div class="td-size td-text-align"><label for="click-chk2">2002 시민의식 국제비교 조사</label></div></td>
-                                    <td class="no-use-right-border"><div class="td-size"><label for="click-chk2">공보처</label></div></td>
-                                </tr>
-                                <tr>
-                                    <td><div class="td-size"><input type="checkbox" id="click-chk3"></div></td>
-                                    <td><div class="td-size"><label for="click-chk3">1</label></div</td>
-                                    <td><div class="td-size td-text-align"><label for="click-chk3">2002 시민의식 국제비교 조사</label></div></td>
-                                    <td class="no-use-right-border"><div class="td-size"><label for="click-chk3">공보처</label></div></td>
-                                </tr>
-                                <tr>
-                                    <td><div class="td-size"><input type="checkbox" id="click-chk4"></div></td>
-                                    <td><div class="td-size"><label for="click-chk4">1</label></div</td>
-                                    <td><div class="td-size td-text-align"><label for="click-chk4">2002 시민의식 국제비교 조사</label></div></td>
-                                    <td class="no-use-right-border"><div class="td-size"><label for="click-chk4">공보처</label></div></td>
-                                </tr>                        
-                                <tr>
-                                    <td><div class="td-size"><input type="checkbox" id="click-chk5"></div></td>
-                                    <td><div class="td-size"><label for="click-chk5">1</label></div</td>
-                                    <td><div class="td-size td-text-align"><label for="click-chk5">2002 시민의식 국제비교 조사</label></div></td>
-                                    <td class="no-use-right-border"><div class="td-size"><label for="click-chk5">공보처</label></div></td>
-                                </tr>                        
-                                <tr>
-                                    <td><div class="td-size"><input type="checkbox" id="click-chk6"></div></td>
-                                    <td><div class="td-size"><label for="click-chk6">1</label></div</td>
-                                    <td><div class="td-size td-text-align"><label for="click-chk6">2002 시민의식 국제비교 조사</label></div></td>
-                                    <td class="no-use-right-border"><div class="td-size"><label for="click-chk6">공보처</label></div></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="paging2">
-                        <a href="#" class="left-side prev-btn-left btn-display">
-                            <span class="prev-btn-right">
-                                <span class="pn-btn-middle">
-                                    PREV
+                        <div class="search-pannel-box">
+                            <div class="search-pannel">
+                                <div class="search-right">
+                                    <div class="search-middle">
+                                        <h3 id="h3-search">검색어</h3>
+                                        <div class="search-contents-box">
+                                            <form action="#">
+                                                <select name="namesearch" id="name">
+                                                    <option value="서명">서명</option>
+                                                    <option value="홍길동">홍길동</option>
+                                                </select>
+                                                <div id="searching">
+                                                    <input type="text" placeholder="Search...">
+                                                </div>
+                                                <button class="searching-btn"></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-num-section">
+                            총 <span><strong>2건</strong></span>
+                        </div>
+                        <div class="chart-section">
+                            <table>
+                                <caption>시민의식 국제비교 조사표</caption>
+                                <colgroup>
+                                    <col style="width: 6.4%;">
+                                    <col style="width: 6.9%;">
+                                    <col style="width: 60.1%;">
+                                    <col style="width: 26%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">선택</th>
+                                        <th scope="col">번호</th>
+                                        <th scope="col">신청정보</th>
+                                        <th scope="col" class="no-use-right-border">출판사</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><div class="td-size"><input type="checkbox" id="click-chk"></div></td>
+                                        <td><div class="td-size"><label for="click-chk">1</label></div</td>
+                                        <td><div class="td-size td-text-align"><label for="click-chk">2002 시민의식 국제비교 조사</label></div></td>
+                                        <td class="no-use-right-border"><div class="td-size"><label for="click-chk">공보처</label></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="td-size"><input type="checkbox" id="click-chk2"></div></td>
+                                        <td><div class="td-size"><label for="click-chk2">1</label></div</td>
+                                        <td><div class="td-size td-text-align"><label for="click-chk2">2002 시민의식 국제비교 조사</label></div></td>
+                                        <td class="no-use-right-border"><div class="td-size"><label for="click-chk2">공보처</label></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="td-size"><input type="checkbox" id="click-chk3"></div></td>
+                                        <td><div class="td-size"><label for="click-chk3">1</label></div</td>
+                                        <td><div class="td-size td-text-align"><label for="click-chk3">2002 시민의식 국제비교 조사</label></div></td>
+                                        <td class="no-use-right-border"><div class="td-size"><label for="click-chk3">공보처</label></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="td-size"><input type="checkbox" id="click-chk4"></div></td>
+                                        <td><div class="td-size"><label for="click-chk4">1</label></div</td>
+                                        <td><div class="td-size td-text-align"><label for="click-chk4">2002 시민의식 국제비교 조사</label></div></td>
+                                        <td class="no-use-right-border"><div class="td-size"><label for="click-chk4">공보처</label></div></td>
+                                    </tr>                        
+                                    <tr>
+                                        <td><div class="td-size"><input type="checkbox" id="click-chk5"></div></td>
+                                        <td><div class="td-size"><label for="click-chk5">1</label></div</td>
+                                        <td><div class="td-size td-text-align"><label for="click-chk5">2002 시민의식 국제비교 조사</label></div></td>
+                                        <td class="no-use-right-border"><div class="td-size"><label for="click-chk5">공보처</label></div></td>
+                                    </tr>                        
+                                    <tr>
+                                        <td><div class="td-size"><input type="checkbox" id="click-chk6"></div></td>
+                                        <td><div class="td-size"><label for="click-chk6">1</label></div</td>
+                                        <td><div class="td-size td-text-align"><label for="click-chk6">2002 시민의식 국제비교 조사</label></div></td>
+                                        <td class="no-use-right-border"><div class="td-size"><label for="click-chk6">공보처</label></div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="paging2">
+                            <a href="#" class="left-side prev-btn-left btn-display">
+                                <span class="prev-btn-right">
+                                    <span class="pn-btn-middle">
+                                        PREV
+                                    </span>
                                 </span>
-                            </span>
-                        </a>
-                        <a href="#" class="num-left btn-display num">
-                            <span class="num-right">
-                                <span class="num-middle">
-                                    1
+                            </a>
+                            <a href="#" class="num-left btn-display num">
+                                <span class="num-right">
+                                    <span class="num-middle">
+                                        1
+                                    </span>
                                 </span>
-                            </span>
-                        </a>
-                        <a href="#" class="num-clicked clicked-num-left btn-display">
-                            <span class="clicked-num-right">
-                                <span class="clicked-num-middle">
-                                    2
+                            </a>
+                            <a href="#" class="num-clicked clicked-num-left btn-display">
+                                <span class="clicked-num-right">
+                                    <span class="clicked-num-middle">
+                                        2
+                                    </span>
                                 </span>
-                            </span>
-                        </a>
-                        <a href="#" class="num-left btn-display num">
-                            <span class="num-right">
-                                <span class="num-middle">
-                                    3
+                            </a>
+                            <a href="#" class="num-left btn-display num">
+                                <span class="num-right">
+                                    <span class="num-middle">
+                                        3
+                                    </span>
                                 </span>
-                            </span>
-                        </a>
-                        <a href="#" class="num-left btn-display num">
-                            <span class="num-right">
-                                <span class="num-middle">
-                                    4
+                            </a>
+                            <a href="#" class="num-left btn-display num">
+                                <span class="num-right">
+                                    <span class="num-middle">
+                                        4
+                                    </span>
                                 </span>
-                            </span>
-                        </a>
-                        <a href="#" class="num-left btn-display num">
-                            <span class="num-right">
-                                <span class="num-middle">
-                                    5
+                            </a>
+                            <a href="#" class="num-left btn-display num">
+                                <span class="num-right">
+                                    <span class="num-middle">
+                                        5
+                                    </span>
                                 </span>
-                            </span>
-                        </a>
-                        <a href="#" class="num-left btn-display num">
-                            <span class="num-right">
-                                <span class="num-middle">
-                                    6
+                            </a>
+                            <a href="#" class="num-left btn-display num">
+                                <span class="num-right">
+                                    <span class="num-middle">
+                                        6
+                                    </span>
                                 </span>
-                            </span>
-                        </a>
-                        <a href="#" class="num-left btn-display num">
-                            <span class="num-right">
-                                <span class="num-middle">
-                                    7
+                            </a>
+                            <a href="#" class="num-left btn-display num">
+                                <span class="num-right">
+                                    <span class="num-middle">
+                                        7
+                                    </span>
                                 </span>
-                            </span>
-                        </a>
-                        <a href="#" class="num-left btn-display num">
-                            <span class="num-right">
-                                <span class="num-middle">
-                                    8
+                            </a>
+                            <a href="#" class="num-left btn-display num">
+                                <span class="num-right">
+                                    <span class="num-middle">
+                                        8
+                                    </span>
                                 </span>
-                            </span>
-                        </a>
-                        <a href="#" class="num-left btn-display num">
-                            <span class="num-right">
-                                <span class="num-middle">
-                                    9
+                            </a>
+                            <a href="#" class="num-left btn-display num">
+                                <span class="num-right">
+                                    <span class="num-middle">
+                                        9
+                                    </span>
                                 </span>
-                            </span>
-                        </a>
-                        <a href="#" class="num-left btn-display num">
-                            <span class="num-right">
-                                <span class="num-middle">
-                                    10
+                            </a>
+                            <a href="#" class="num-left btn-display num">
+                                <span class="num-right">
+                                    <span class="num-middle">
+                                        10
+                                    </span>
                                 </span>
-                            </span>
-                        </a>
-                        <a href="#" class="right-side next-btn-left btn-display">
-                            <span class="next-btn-right">
-                                <span class="pn-btn-middle">
-                                    NEXT
+                            </a>
+                            <a href="#" class="right-side next-btn-left btn-display">
+                                <span class="next-btn-right">
+                                    <span class="pn-btn-middle">
+                                        NEXT
+                                    </span>
                                 </span>
-                            </span>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="btn-text-align">
-                    <a href="#" class="btn-last btn-last2">
-                        <span class="btn-last-right">
-                            <span class="btn-last-middle">
+                    <a href="#" class="kw-btn-display kw-last-btn">
+                        <span class="kw-btn-display kw-last-btn-right">
+                            <span class="kw-btn-display kw-last-btn-mid">
                                 확인
                             </span>
                         </span>
                     </a>
-                    <a href="#" class="btn-last btn-last2">
-                        <span class="btn-last-right">
-                            <span class="btn-last-middle">
+                    <a href="#" class="kw-btn-display kw-last-btn">
+                        <span class="kw-btn-display kw-last-btn-right">
+                            <span class="kw-btn-display kw-last-btn-mid">
                                 <label for="journalbtn">닫기</label>
                             </span>
                         </span>
@@ -587,56 +592,139 @@
         </div>
         <label for="journalbtn"></label>
     </div>
+    <!-- 키워드 검색 -->
     <input id="popupbtn" class="popupbtn" type="checkbox">
     <div class="opacity-bg">
         <div class="real-wrap2">
             <div class="exit-btn"><label for="popupbtn"></label></div>
-            <div class="wrap-popup2">
+            <div class="wrap-popup">
                 <div class="keyword-banner">
                     <img src="../img/keyword-banner.png" alt="키워드등록">
                 </div>
                 <div class="popup-contents-box">
-                    <p>관심분야의 키워드를 등록하면 해당하는 신착도서와 저널정보를 받아볼 수 있습니다.</p>
+                    <div class="keyword-p-wrap">
+                        <p>관심분야의 키워드를 등록하면 해당하는 신착도서와 저널정보를 받아볼 수 있습니다.</p>
+                    </div>
                     <div class="chart-section">
                         <form action="#">
                             <div class="keyword-search-container">
                                 <label for="name-kw" class="kw-label">
                                     <img src="../img/keyword/name-kw.png" alt="서명키워드">
                                 </label>
-                                <input class="keyword-search" type="text" id="name-kw" readonly>
+                                <div class="input-wrap">
+                                    <div class="top-tb">
+                                        <div class="bt-tb">
+                                            <div class="top-l-tb">
+                                                <div class="top-r-tb">
+                                                    <div class="bt-l-tb">
+                                                        <div class="bt-r-tb">
+                                                            <div class="left-tb">
+                                                                <div class="right-tb">
+                                                                    <div class="tb-wrap">
+                                                                        <input class="keyword-search" type="text" id="name-kw" readonly>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="keyword-search-container">
                                 <label for="wrter-kw" class="kw-label">
                                     <img src="../img/keyword/writer-kw.png" alt="저자명키워드">
                                 </label>
-                                <input class="keyword-search" type="text" id="wrter-kw" readonly>
+                                <div class="input-wrap">
+                                    <div class="top-tb">
+                                        <div class="bt-tb">
+                                            <div class="top-l-tb">
+                                                <div class="top-r-tb">
+                                                    <div class="bt-l-tb">
+                                                        <div class="bt-r-tb">
+                                                            <div class="left-tb">
+                                                                <div class="right-tb">
+                                                                    <div class="tb-wrap">
+                                                                        <input class="keyword-search" type="text" id="name-kw" readonly>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="keyword-search-container">
                                 <label for="publ-kw" class="kw-label">
                                     <img src="../img/keyword/publ-kw.png" alt="출판사키워드">
                                 </label>
-                                <input class="keyword-search" type="text" id="publ-kw" readonly>
+                                <div class="input-wrap">
+                                    <div class="top-tb">
+                                        <div class="bt-tb">
+                                            <div class="top-l-tb">
+                                                <div class="top-r-tb">
+                                                    <div class="bt-l-tb">
+                                                        <div class="bt-r-tb">
+                                                            <div class="left-tb">
+                                                                <div class="right-tb">
+                                                                    <div class="tb-wrap">
+                                                                        <input class="keyword-search" type="text" id="name-kw" readonly>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="keyword-search-container">
                                 <label for="subj-kw" class="kw-label">
                                     <img src="../img/keyword/subj-kw.png" alt="주제명키워드">
                                 </label>
-                                <input class="keyword-search" type="text" id="subj-kw" readonly>
+                                <div class="input-wrap">
+                                    <div class="top-tb">
+                                        <div class="bt-tb">
+                                            <div class="top-l-tb">
+                                                <div class="top-r-tb">
+                                                    <div class="bt-l-tb">
+                                                        <div class="bt-r-tb">
+                                                            <div class="left-tb">
+                                                                <div class="right-tb">
+                                                                    <div class="tb-wrap">
+                                                                        <input class="keyword-search" type="text" id="name-kw" readonly>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </form>
                     </div>
                 </div>
                 <div class="btn-text-align">
-                    <a href="#" class="btn-last btn-last2">
-                        <span class="btn-last-right">
-                            <span class="btn-last-middle">
+                    <a href="#" class="kw-btn-display kw-last-btn">
+                        <span class="kw-btn-display kw-last-btn-right">
+                            <span class="kw-btn-display kw-last-btn-mid">
                                 확인
                             </span>
                         </span>
                     </a>
-                    <a href="#" class="btn-last btn-last2">
-                        <span class="btn-last-right">
-                            <span class="btn-last-middle">
+                    <a href="#" class="kw-btn-display kw-last-btn">
+                        <span class="kw-btn-display kw-last-btn-right">
+                            <span class="kw-btn-display kw-last-btn-mid">
                                 <label for="popupbtn">닫기</label>
                             </span>
                         </span>
